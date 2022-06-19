@@ -11,7 +11,7 @@ import javax.swing.border.EtchedBorder;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
-public class Login extends JFrame {
+public class Frame extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField txtUsername;
@@ -24,7 +24,7 @@ public class Login extends JFrame {
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
-				Login frame = new Login();
+				Frame frame = new Frame();
 				frame.setVisible(true);
 
 			}
@@ -34,7 +34,7 @@ public class Login extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Login() {
+	public Frame() {
 		
 		Color celadonBlue = new Color(69, 123, 157);
 		Color prussianBlue = new Color(29, 53, 87);

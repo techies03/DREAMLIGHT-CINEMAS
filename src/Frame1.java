@@ -39,6 +39,11 @@ public class Frame1 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 	
+	Image eyesOnMe = new ImageIcon(this.getClass().getResource("/eyesOnMe.jpg")).getImage();
+	Image drStrange = new ImageIcon(this.getClass().getResource("/drStrange.jpg")).getImage();
+	Image topGun = new ImageIcon(this.getClass().getResource("/topGun.jpg")).getImage();
+	Image minions = new ImageIcon(this.getClass().getResource("/minions.jpg")).getImage();
+
 	JLabel lblDate = new JLabel("date");
 	private final ButtonGroup buttonGroup = new ButtonGroup();
 
@@ -181,7 +186,7 @@ public class Frame1 extends JFrame {
 		JLabel lblPosterEyesOnMe = new JLabel("");
 		lblPosterEyesOnMe.setBounds(15, 15, 250, 350);
 		panelEyesOnMe.add(lblPosterEyesOnMe);
-		lblPosterEyesOnMe.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\EYDOB_WVAAEEEXQ_1_250x350.jpg"));
+		lblPosterEyesOnMe.setIcon(new ImageIcon(eyesOnMe));
 		
 		
 		JPanel panelDrStrange = new JPanel();
@@ -194,7 +199,7 @@ public class Frame1 extends JFrame {
 		panelDrStrange.setVisible(false);
 		
 		JLabel lblPosterDrStrange = new JLabel("");
-		lblPosterDrStrange.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\MV5BNWM0ZGJlMzMtZmYwMi00NzI3LTgzMzMtNjMzNjliNDRmZmFlXkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1__250x350.jpg"));
+		lblPosterDrStrange.setIcon(new ImageIcon(drStrange));
 		lblPosterDrStrange.setBounds(15, 15, 250, 350);
 		panelDrStrange.add(lblPosterDrStrange);
 		
@@ -209,7 +214,7 @@ public class Frame1 extends JFrame {
 		panelTopGun.setVisible(false);
 		
 		JLabel lblPosterTopGun = new JLabel("");
-		lblPosterTopGun.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\MV5BMmIwZDMyYWUtNTU0ZS00ODJhLTg2ZmEtMTk5ZmYzODcxODYxXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1__250x350.jpg"));
+		lblPosterTopGun.setIcon(new ImageIcon(topGun));
 		lblPosterTopGun.setBounds(15, 15, 250, 350);
 		panelTopGun.add(lblPosterTopGun);
 		
@@ -224,7 +229,7 @@ public class Frame1 extends JFrame {
 		panelMinions.setVisible(false);
 		
 		JLabel lblPosterMinions = new JLabel("");
-		lblPosterMinions.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\MV5BZDQyODUwM2MtNzA0YS00ZjdmLTgzMjItZWRjN2YyYWE5ZTNjXkEyXkFqcGdeQXVyMTI2MzY1MjM1._V1__250x350.jpg"));
+		lblPosterMinions.setIcon(new ImageIcon(minions));
 		lblPosterMinions.setBounds(15, 15, 250, 350);
 		panelMinions.add(lblPosterMinions);
 		
@@ -436,7 +441,7 @@ public class Frame1 extends JFrame {
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				Login a = new Login();
+				Frame a = new Frame();
 				a.show();
 				dispose();
 			}

@@ -12,6 +12,8 @@ import javax.swing.JButton;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.EtchedBorder;
 import java.awt.Font;
+import java.awt.Image;
+
 import javax.swing.SwingConstants;
 import javax.swing.JComboBox;
 import javax.swing.JList;
@@ -26,7 +28,12 @@ import java.awt.event.ActionEvent;
 public class Frame4 extends JFrame {
 
 	private JPanel contentPane;
-	
+	private JTextField txtTicket;
+	private JTextField txtFood;
+	private JTextField txtTotal;
+	private JTextField txtChange;
+	private JTextField txtPay;
+
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -35,11 +42,9 @@ public class Frame4 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 	
-	private JTextField txtTicket;
-	private JTextField txtFood;
-	private JTextField txtTotal;
-	private JTextField txtChange;
-	private JTextField txtPay;
+	Image popcorn = new ImageIcon(this.getClass().getResource("/popcorn.png")).getImage();
+
+	
 	String[] payMethod = {"Select Payment Method", "Tng eWallet", "Grab Pay", "Cash", "Credit / Debit"};
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	JComboBox cbPaymentMethod = new JComboBox(payMethod);
@@ -435,7 +440,7 @@ public class Frame4 extends JFrame {
 		panel.add(btnTotal);
 		
 		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\popcorn.png"));
+		lblNewLabel.setIcon(new ImageIcon(popcorn));
 		lblNewLabel.setBounds(10, 10, 540, 530);
 		panelSeatList.add(lblNewLabel);
 	}

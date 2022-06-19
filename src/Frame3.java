@@ -74,8 +74,6 @@ public class Frame3 extends JFrame {
 
 	public Frame3(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime) {
 		
-		Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-		this.setLocation(dim.width / 2 - this.getSize().width / 2, dim.height / 2 - this.getSize().height/2 );
 		
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
