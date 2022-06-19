@@ -72,8 +72,7 @@ public class Frame2 extends JFrame {
 		contentPane.setLayout(null);
 		
 		JPanel panel = new JPanel();
-		panel.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, prussianBlue, prussianBlue), 
-						"MOVIE TITLE", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panel.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(29, 53, 87), new Color(29, 53, 87)), "MOVIE TITLE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panel.setBounds(10, 10, 546, 80);
 		panel.setBackground(celadonBlue);
 		contentPane.add(panel);
@@ -89,8 +88,7 @@ public class Frame2 extends JFrame {
 		
 		
 		JPanel panelShowTime = new JPanel();
-		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, prussianBlue, prussianBlue), 
-				"AVAILABLE SHOWTIMES", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(29, 53, 87), new Color(29, 53, 87)), "AVAILABLE SHOWTIMES", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelShowTime.setBackground(celadonBlue);
 		panelShowTime.setBounds(10, 100, 546, 333);
 		contentPane.add(panelShowTime);
@@ -98,8 +96,7 @@ public class Frame2 extends JFrame {
 		
 		JPanel panelShowBookingDate = new JPanel();
 		panelShowBookingDate.setBackground(prussianBlue);
-		panelShowBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, celadonBlue, celadonBlue), 
-										"BOOKING DATE", TitledBorder.LEADING, TitledBorder.TOP, null, honeydew));
+		panelShowBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(69, 123, 157), new Color(69, 123, 157)), "BOOKING DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelShowBookingDate.setBounds(18, 25, 504, 61);
 		panelShowTime.add(panelShowBookingDate);
 		

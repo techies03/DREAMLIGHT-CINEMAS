@@ -23,6 +23,8 @@ import javax.swing.border.TitledBorder;
 import javax.swing.border.EtchedBorder;
 import java.awt.event.MouseWheelListener;
 import java.awt.event.MouseWheelEvent;
+import java.awt.event.ItemListener;
+import java.awt.event.ItemEvent;
 
 public class Frame1 extends JFrame {
 
@@ -98,8 +100,7 @@ public class Frame1 extends JFrame {
 		JPanel panelClock = new JPanel();
 		panelClock.setBounds(50, 10, 250, 57);
 		panelClock.setBackground(celadonBlue);
-		panelClock.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"CURRENT TIME", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelClock.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "CURRENT TIME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelClock);
 		panelClock.setLayout(null);
 		
@@ -117,8 +118,7 @@ public class Frame1 extends JFrame {
 		JPanel panelDate = new JPanel();
 		panelDate.setBounds(350, 10, 250, 57);
 		panelDate.setBackground(celadonBlue);
-		panelDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"DATE", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelDate);
 		panelDate.setLayout(null);
 		lblDate.setHorizontalAlignment(SwingConstants.CENTER);
@@ -134,8 +134,7 @@ public class Frame1 extends JFrame {
 		panelStaffName.setBounds(650, 10, 250, 57);
 		panelStaffName.setBackground(celadonBlue);
 		panelStaffName.setLayout(null);
-		panelStaffName.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-									"STAFF NAME", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelStaffName.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "STAFF NAME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelStaffName);
 		
 		JLabel lblStaffName = new JLabel("staff name");
@@ -151,8 +150,7 @@ public class Frame1 extends JFrame {
 		panelUptime.setBounds(950, 10, 250, 57);
 		panelUptime.setBackground(celadonBlue);
 		panelUptime.setLayout(null);
-		panelUptime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE),
-								"UPTIME", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelUptime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "UPTIME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelUptime);
 		
 		//stopwatch
@@ -176,8 +174,7 @@ public class Frame1 extends JFrame {
 		
 		JPanel panelEyesOnMe = new JPanel();
 		panelEyesOnMe.setBackground(celadonBlue);
-		panelEyesOnMe.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"EYES ON ME", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelEyesOnMe.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "EYES ON ME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelEyesOnMe.setBounds(30, 67, 280, 439);
 		panelShowMovie.add(panelEyesOnMe);
 		panelEyesOnMe.setVisible(false);
@@ -192,8 +189,7 @@ public class Frame1 extends JFrame {
 		JPanel panelDrStrange = new JPanel();
 		panelDrStrange.setLayout(null);
 		panelDrStrange.setBackground(celadonBlue);
-		panelDrStrange.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"DOCTOR STRANGE", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelDrStrange.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "DOCTOR STRANGE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelDrStrange.setBounds(330, 67, 280, 439);
 		panelShowMovie.add(panelDrStrange);
 		panelDrStrange.setVisible(false);
@@ -207,8 +203,7 @@ public class Frame1 extends JFrame {
 		JPanel panelTopGun = new JPanel();
 		panelTopGun.setLayout(null);		
 		panelTopGun.setBackground(celadonBlue);
-		panelTopGun.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"TOP GUN MAVERICK", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelTopGun.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "TOP GUN MAVERICK", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelTopGun.setBounds(630, 67, 280, 439);
 		panelShowMovie.add(panelTopGun);
 		panelTopGun.setVisible(false);
@@ -222,8 +217,7 @@ public class Frame1 extends JFrame {
 		JPanel panelMinions = new JPanel();
 		panelMinions.setLayout(null);		
 		panelMinions.setBackground(celadonBlue);
-		panelMinions.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, Color.WHITE), 
-								"MINIONS", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelMinions.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "MINIONS", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelMinions.setBounds(930, 67, 280, 439);
 		panelShowMovie.add(panelMinions);
 		panelMinions.setVisible(false);
@@ -239,8 +233,7 @@ public class Frame1 extends JFrame {
 		panelShowMovie.add(panelShowDate);
 		
 		panelShowDate.setBackground(celadonBlue);
-		panelShowDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, Color.WHITE, honeydew), 
-								"MOVIE LIST", TitledBorder.LEADING, TitledBorder.TOP, null, honeydew));
+		panelShowDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(241, 250, 238)), "DATE LIST", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelShowDate.setLayout(null);
 
 		String[] datePick= {null, incrementDate(0)
@@ -254,21 +247,25 @@ public class Frame1 extends JFrame {
 		
 		@SuppressWarnings({ "rawtypes", "unchecked" })
 		JComboBox cbShowDate = new JComboBox(datePick);
-		cbShowDate.setBounds(10, 17, 274, 20);
+		cbShowDate.addItemListener(new ItemListener() {
+			public void itemStateChanged(ItemEvent e) {
+			}
+		});
+		cbShowDate.setBounds(145, 17, 274, 23);
 		panelShowDate.add(cbShowDate);
 		
-
-		JButton btnConfirm = new JButton("CONFIRM");
-		btnConfirm.setBackground(mint);
-		btnConfirm.setForeground(prussianBlue);
-		btnConfirm.setBounds(310, 17, 96, 20);
-		panelShowDate.add(btnConfirm);
-		
 		JLabel lblShowDate = new JLabel("");
-		lblShowDate.setBounds(429, 17, 170, 20);
+		lblShowDate.setBounds(429, 17, 170, 23);
 		lblShowDate.setForeground(honeydew);
 		panelShowDate.add(lblShowDate);
 		lblShowDate.setFont(new Font("Arial", Font.BOLD, 14));
+		
+
+		JButton btnConfirm = new JButton("CONFIRM");
+		btnConfirm.setBounds(10, 17, 115, 23);
+		panelShowDate.add(btnConfirm);
+		btnConfirm.setBackground(mint);
+		btnConfirm.setForeground(prussianBlue);
 		btnConfirm.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				

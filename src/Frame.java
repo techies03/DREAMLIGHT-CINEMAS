@@ -17,9 +17,7 @@ public class Frame extends JFrame {
 	private JTextField txtUsername;
 	private JPasswordField txtPassword;
 
-	/**
-	 * Launch the application.
-	 */
+
 	public static void main(String[] args) {
 		
 		EventQueue.invokeLater(new Runnable() {
@@ -31,9 +29,7 @@ public class Frame extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
+
 	public Frame() {
 		
 		Color celadonBlue = new Color(69, 123, 157);
@@ -93,10 +89,6 @@ public class Frame extends JFrame {
 		txtPassword.setBounds(178, 155, 237, 20);
 		contentPane.add(txtPassword);
 		
-		JLabel lblMessage = new JLabel("");
-		lblMessage.setBounds(178, 174, 237, 20);
-		contentPane.add(lblMessage);
-		
 		JButton btnLogin = new JButton("LOGIN");
 		btnLogin.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
@@ -109,39 +101,39 @@ public class Frame extends JFrame {
 				if(txtUsername.getText().equals(Username[0]) &&
 				   txtPassword.getText().equals(Password[0])) {
 							
-							name = "MOHD MUQSIT";
-							Frame1 a = new Frame1(name);
-							a.show();
-							dispose();
+						name = "MOHD MUQSIT";
+						Frame1 a = new Frame1(name);
+						a.show();
+						dispose();
 
 				} else if(txtUsername.getText().toString().equals(Username[1]) &&
 						  txtPassword.getText().toString().equals(Password[0])) {
 					
-							name = "MUHAMMAD DANIAL ASYRAAF";
-							Frame1 a = new Frame1(name);
-							a.show();
-							dispose();
+						name = "MUHAMMAD DANIAL ASYRAAF";
+						Frame1 a = new Frame1(name);
+						a.show();
+						dispose();
 
 				} else if (txtUsername.getText().toString().equals(Username[2]) &&
 						   txtPassword.getText().toString().equals(Password[0])) {
 					
-							name = "MUHAMMAD IRFAN";
-							Frame1 a = new Frame1(name);
-							a.show();
-							dispose();
+						name = "MUHAMMAD IRFAN";
+						Frame1 a = new Frame1(name);
+						a.show();
+						dispose();
 
 				} else if (txtUsername.getText().toString().equals(Username[3]) &&
 						   txtPassword.getText().toString().equals(Password[0])) {
 					
-							name = "MUHAMMAD KAMIL";
-							Frame1 a = new Frame1(name);
-							a.show();
-							dispose();
+						name = "MUHAMMAD KAMIL";
+						Frame1 a = new Frame1(name);
+						a.show();
+						dispose();
 
-				} else {
-					
-							lblMessage.setText("Wrong Input!");
-					}
+				} else  {
+ 						JOptionPane.showMessageDialog(btnLogin, "Wrong input", "Wrong Input", JOptionPane.ERROR_MESSAGE);
+
+				}
 				
 			}
 		});

@@ -86,7 +86,7 @@ public class Frame3 extends JFrame {
 		
 		JPanel panelMovieTitle = new JPanel();
 		panelMovieTitle.setLayout(null);
-		panelMovieTitle.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "MOVIE TITLE", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelMovieTitle.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "MOVIE TITLE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelMovieTitle.setBackground(prussianBlue);
 		panelMovieTitle.setBounds(50, 10, 370, 57);
 		contentPane.add(panelMovieTitle);
@@ -101,7 +101,7 @@ public class Frame3 extends JFrame {
 		
 		JPanel panelBookingDate = new JPanel();
 		panelBookingDate.setLayout(null);
-		panelBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "BOOKING DATE", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "BOOKING DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelBookingDate.setBackground(prussianBlue);
 		panelBookingDate.setBounds(433, 10, 250, 57);
 		contentPane.add(panelBookingDate);
@@ -116,7 +116,7 @@ public class Frame3 extends JFrame {
 		
 		JPanel panelHallType = new JPanel();
 		panelHallType.setLayout(null);
-		panelHallType.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "HALL TYPE", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelHallType.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "HALL TYPE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelHallType.setBackground(prussianBlue);
 		panelHallType.setBounds(703, 10, 250, 57);
 		contentPane.add(panelHallType);
@@ -130,7 +130,7 @@ public class Frame3 extends JFrame {
 		
 		JPanel panelShowTime = new JPanel();
 		panelShowTime.setLayout(null);
-		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "SHOW TIME", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "SHOW TIME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelShowTime.setBackground(prussianBlue);
 		panelShowTime.setBounds(973, 10, 250, 57);
 		contentPane.add(panelShowTime);
@@ -144,8 +144,7 @@ public class Frame3 extends JFrame {
 		panelShowTime.add(lblShowTime);
 		
 		panelInfo = new JPanel();
-		panelInfo.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, honeydew, honeydew),
-								"INFORMATION", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+		panelInfo.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(241, 250, 238), new Color(241, 250, 238)), "INFORMATION", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelInfo.setBounds(893, 108, 330, 550);
 		contentPane.add(panelInfo);
 		panelInfo.setBackground(prussianBlue);
@@ -236,14 +235,6 @@ public class Frame3 extends JFrame {
 		btnConfirm.setBounds(738, 493, 85, 47);
 		panelSeatList.add(btnConfirm);
 		
-		JButton btnClear = new JButton("CLEAR");
-		btnClear.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				
-				
-			}
-		});
-		
 		JButton btnBack = new JButton("BACK");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -258,10 +249,6 @@ public class Frame3 extends JFrame {
 		btnBack.setBounds(10, 493, 85, 47);
 		panelSeatList.add(btnBack);
 		
-		btnClear.setBackground(imperialRed);
-		btnClear.setForeground(honeydew);
-		btnClear.setBounds(643, 493, 85, 47);
-		panelSeatList.add(btnClear);
 		
 		JLabel lblA1 = new JLabel("");
 		lblA1.setIcon(new ImageIcon(singleBlack));
@@ -903,8 +890,7 @@ public class Frame3 extends JFrame {
 		
 		panelMovieClub = new JPanel();
 		panelMovieClub.setLayout(null);
-		panelMovieClub.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160))
-								, "MOVIE CLUB", TitledBorder.LEADING, TitledBorder.TOP, null, honeydew));
+		panelMovieClub.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "MOVIE CLUB", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelMovieClub.setBounds(10, 80, 310, 103);
 		panelMovieClub.setBackground(celadonBlue);
 		panelMovieClub.setVisible(false);
@@ -944,7 +930,7 @@ public class Frame3 extends JFrame {
 		rdbtnNo.setBounds(166, 62, 54, 21);
 		panelMovieClub.add(rdbtnNo);
 		
-		JLabel lblMovieClub = new JLabel("MOVIE CLUB");
+		JLabel lblMovieClub = new JLabel("MOVIE CLUB (15% OFF)");
 		lblMovieClub.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMovieClub.setForeground(honeydew);
 		lblMovieClub.setFont(new Font("Arial", Font.BOLD, 14));
@@ -953,14 +939,14 @@ public class Frame3 extends JFrame {
 		
 		panelCustomers = new JPanel();
 		panelCustomers.setLayout(null);		
-		panelCustomers.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160))
-								, "CUSTOMERS", TitledBorder.LEADING, TitledBorder.TOP, null, honeydew));
+		panelCustomers.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "CUSTOMERS", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelCustomers.setBackground(celadonBlue);
 		panelCustomers.setBounds(10, 224, 310, 235);
 		panelCustomers.setVisible(false);
 		panelInfo.add(panelCustomers);
 		
-		JLabel lblKids = new JLabel("KIDS");
+		JLabel lblKids = new JLabel("KIDS (RM 9)");
+		lblKids.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblKids.setForeground(honeydew);
 		lblKids.setBounds(10, 20, 147, 33);
 		panelCustomers.add(lblKids);
@@ -970,7 +956,8 @@ public class Frame3 extends JFrame {
 		spinnerKids.setBounds(247, 20, 39, 30);
 		panelCustomers.add(spinnerKids);
 		
-		JLabel lblStudent = new JLabel("STUDENT");
+		JLabel lblStudent = new JLabel("STUDENT (RM 12)");
+		lblStudent.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblStudent.setForeground(honeydew);
 		lblStudent.setBounds(10, 55, 147, 33);
 		panelCustomers.add(lblStudent);
@@ -980,7 +967,8 @@ public class Frame3 extends JFrame {
 		spinnerStudent.setBounds(247, 55, 39, 30);
 		panelCustomers.add(spinnerStudent);
 		
-		JLabel lblAdult = new JLabel("ADULT");
+		JLabel lblAdult = new JLabel("ADULT (RM 18)");
+		lblAdult.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblAdult.setForeground(honeydew);
 		lblAdult.setBounds(10, 88, 147, 33);
 		panelCustomers.add(lblAdult);
@@ -990,7 +978,8 @@ public class Frame3 extends JFrame {
 		spinnerAdult.setBounds(247, 90, 39, 30);
 		panelCustomers.add(spinnerAdult);
 		
-		JLabel lblEldery = new JLabel("ELDERY");
+		JLabel lblEldery = new JLabel("ELDERY (RM 10)");
+		lblEldery.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblEldery.setForeground(honeydew);
 		lblEldery.setBounds(10, 121, 147, 33);
 		panelCustomers.add(lblEldery);
@@ -1002,7 +991,7 @@ public class Frame3 extends JFrame {
 		
 		JPanel panelTotalCustomer = new JPanel();
 		panelTotalCustomer.setLayout(null);
-		panelTotalCustomer.setBorder(new TitledBorder(null, "TOTAL CUSTOMER", TitledBorder.LEADING, TitledBorder.TOP, null, honeydew));
+		panelTotalCustomer.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "TOTAL CUSTOMER", TitledBorder.RIGHT, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelTotalCustomer.setBackground(celadonBlue);
 		panelTotalCustomer.setBounds(10, 164, 290, 61);
 		panelCustomers.add(panelTotalCustomer);
@@ -1061,6 +1050,8 @@ public class Frame3 extends JFrame {
 		lblTotalCustomer.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTotalCustomer.setBounds(236, 12, 44, 39);
 		panelTotalCustomer.add(lblTotalCustomer);
+		
+		
 		
 
 	}

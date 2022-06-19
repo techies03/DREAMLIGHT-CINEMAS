@@ -108,8 +108,7 @@ public class Frame4 extends JFrame {
 		JPanel panelCaramel = new JPanel();
 		panelCaramel.setBounds(20, 34, 224, 144);
 		panel.add(panelCaramel);
-		panelCaramel.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)),
-												"POPCORN CARAMEL", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelCaramel.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "POPCORN CARAMEL", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelCaramel.setBackground(prussianBlue);
 		panelCaramel.setLayout(null);
 		
@@ -145,8 +144,7 @@ public class Frame4 extends JFrame {
 		
 		JPanel panelChoco = new JPanel();
 		panelChoco.setLayout(null);
-		panelChoco.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)),
-				"POPCORN CHOCOLATE", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelChoco.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "POPCORN CHOCOLATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelChoco.setBackground(prussianBlue);
 		panelChoco.setBounds(264, 34, 224, 144);
 		panel.add(panelChoco);
@@ -183,8 +181,7 @@ public class Frame4 extends JFrame {
 		
 		JPanel panelButter = new JPanel();
 		panelButter.setLayout(null);
-		panelButter.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)),
-				"POPCORN BUTTER", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelButter.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "POPCORN BUTTER", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelButter.setBackground(prussianBlue);
 		panelButter.setBounds(20, 199, 224, 144);
 		panel.add(panelButter);
@@ -222,8 +219,7 @@ public class Frame4 extends JFrame {
 		
 		JPanel panelCheckOut = new JPanel();
 		panelCheckOut.setLayout(null);
-		panelCheckOut.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)),
-				"CHECK OUT", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(168, 218, 220)));
+		panelCheckOut.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "CHECK OUT", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelCheckOut.setBackground(prussianBlue);
 		panelCheckOut.setBounds(264, 199, 224, 301);
 		panel.add(panelCheckOut);
@@ -400,6 +396,11 @@ public class Frame4 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				
+				
+				Frame5 f5 = new Frame5(name, movie, Months, Days, Hours, Minutes, showTime, seat, totalKids,
+						 				totalStudent, totalAdult, totalEldery, movieClub);
+				f5.show();
+				dispose();
 			}
 		});
 		btnNext.setVisible(false);
