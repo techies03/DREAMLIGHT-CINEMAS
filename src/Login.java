@@ -36,6 +36,13 @@ public class Login extends JFrame {
 	 */
 	public Login() {
 		
+		Color celadonBlue = new Color(69, 123, 157);
+		Color prussianBlue = new Color(29, 53, 87);
+		Color powderBlue = new Color(168, 218, 220);
+		Color honeydew = new Color(241, 250, 238);
+		Color imperialRed = new Color(230, 57, 70);
+		Color emerald = new Color(64, 145, 108);
+		Color mint = new Color(82, 183, 136);
 		
 		setResizable(false);
 		setForeground(Color.WHITE);
@@ -45,8 +52,10 @@ public class Login extends JFrame {
 
 		
 		contentPane = new JPanel();
-		contentPane.setBackground(new Color(173,128,168));
-		contentPane.setBorder(new TitledBorder(null, "Log In", TitledBorder.LEADING, TitledBorder.TOP, null, null));
+		contentPane.setBackground(prussianBlue);
+		contentPane.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)),
+								"Log In", TitledBorder.LEADING, TitledBorder.TOP, null, powderBlue));
+
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
@@ -55,15 +64,17 @@ public class Login extends JFrame {
 		lblLogo.setBounds(178, 10, 145, 107);
 		contentPane.add(lblLogo);
 		
-		JLabel lblUsername_1 = new JLabel("USERNAME : ");
-		lblUsername_1.setFont(new Font("Arial", Font.BOLD, 15));
-		lblUsername_1.setBounds(68, 102, 100, 43);
-		contentPane.add(lblUsername_1);
+		JLabel lblUsername = new JLabel("USERNAME : ");
+		lblUsername.setForeground(honeydew);
+		lblUsername.setFont(new Font("Arial", Font.BOLD, 15));
+		lblUsername.setBounds(68, 102, 100, 43);
+		contentPane.add(lblUsername);
 		
-		JLabel lblPassword_1 = new JLabel("PASSWORD : ");
-		lblPassword_1.setFont(new Font("Arial", Font.BOLD, 15));
-		lblPassword_1.setBounds(68, 145, 120, 43);
-		contentPane.add(lblPassword_1);
+		JLabel lblPassword = new JLabel("PASSWORD : ");
+		lblPassword.setForeground(honeydew);
+		lblPassword.setFont(new Font("Arial", Font.BOLD, 15));
+		lblPassword.setBounds(68, 145, 120, 43);
+		contentPane.add(lblPassword);
 		
 		txtUsername = new JTextField();
 		txtUsername.setFont(new Font("Arial", txtUsername.getFont().getStyle() | Font.BOLD, 12));
@@ -132,8 +143,8 @@ public class Login extends JFrame {
 				
 			}
 		});
-		btnLogin.setForeground(Color.WHITE);
-		btnLogin.setBackground(Color.CYAN);
+		btnLogin.setForeground(honeydew);
+		btnLogin.setBackground(emerald);
 		btnLogin.setFont(new Font("Arial", btnLogin.getFont().getStyle() | Font.BOLD, 15));
 		btnLogin.setBounds(273, 198, 111, 36);
 		contentPane.add(btnLogin);
