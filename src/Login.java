@@ -44,6 +44,8 @@ public class Login extends JFrame {
 		Color emerald = new Color(64, 145, 108);
 		Color mint = new Color(82, 183, 136);
 		
+		Image dreamlight = new ImageIcon(this.getClass().getResource("/dreamLight.png")).getImage();
+
 		setResizable(false);
 		setForeground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -60,7 +62,7 @@ public class Login extends JFrame {
 		contentPane.setLayout(null);
 		
 		JLabel lblLogo = new JLabel("");
-		lblLogo.setIcon(new ImageIcon("C:\\Users\\mrmuq\\Downloads\\Grey_Simple_and_Minimalist_Cinema_House_Film_Production_Youtube_Channel_Logo_2_150x150.png"));
+		lblLogo.setIcon(new ImageIcon(dreamlight));
 		lblLogo.setBounds(178, 10, 145, 107);
 		contentPane.add(lblLogo);
 		
