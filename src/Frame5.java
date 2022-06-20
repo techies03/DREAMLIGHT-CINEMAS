@@ -24,6 +24,7 @@ import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.print.PageFormat;
 import java.awt.print.Printable;
 import java.awt.print.PrinterException;
@@ -51,6 +52,9 @@ public class Frame5 extends JFrame {
 	Color mint = new Color(82, 183, 136);
 
 	DecimalFormat df = new DecimalFormat("RM #0.00");
+	
+	Image qrCode = new ImageIcon(this.getClass().getResource("/qrCode.png")).getImage();
+
 
 
 	@SuppressWarnings("static-access")
@@ -121,7 +125,7 @@ public class Frame5 extends JFrame {
 		panelReciept.add(lblMovieTitle);
 		
 		JLabel lblQrCode = new JLabel("");
-		lblQrCode.setIcon(new ImageIcon("C:\\Users\\mrmuq\\OneDrive\\Documents\\Eclipse\\DREAMLIGHT CINEMAS\\Images\\qrCode_200x200.png"));
+		lblQrCode.setIcon(new ImageIcon(qrCode));
 		lblQrCode.setBounds(288, 156, 200, 200);
 		panelReciept.add(lblQrCode);
 		
