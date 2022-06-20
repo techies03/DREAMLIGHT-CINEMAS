@@ -62,7 +62,7 @@ public class Frame3 extends JFrame {
 							//collumn
 	String[][] seat = 	{	{"", "", "", "", "", "", ""},
 							{"", "", "", "", "", "", ""},
-								{"", "", "", "", "", "", ""},
+							{"", "", "", "", "", "", ""},
 						};
 	
 	int[][] seatValue = {	{0, 0, 0, 0, 0, 0, 0,},
@@ -1078,6 +1078,27 @@ public class Frame3 extends JFrame {
 		spinnerStudent.setValue(0);
 		spinnerAdult.setValue(0);
 		spinnerEldery.setValue(0);
+	}
+	
+	public static String arraySeat(String seat[][]) {
+		
+        String seatPick = "";
+        
+        for(int i = 0; i < seat.length; i++){
+        	
+            for(int c = 0; c < seat[i].length; c++){
+            	
+            	if(seat[i][c] != null) {
+            		
+            		seatPick += seat[i][c] + " ";
+            		
+            	}
+
+            }
+            
+        }
+        
+        return seatPick;
 	}
 }
 

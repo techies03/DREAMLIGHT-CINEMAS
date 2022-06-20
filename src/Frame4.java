@@ -81,8 +81,7 @@ public class Frame4 extends JFrame {
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Frame4(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime, String seat[][], int totalKids,
 					int totalStudent, int totalAdult, int totalEldery, double movieClub) {
-		
-		
+				
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1280, 720);
 		setResizable(false);
@@ -369,8 +368,9 @@ public class Frame4 extends JFrame {
 				totalPriceAdult = priceAdult * totalAdult;
 				totalPriceEldery = priceEldery * totalEldery;
 				
-				ticketDiscount = movieClub * movieClub;
-				totalTicket = totalPriceKids + totalPriceStudent + totalPriceAdult + totalPriceEldery - ticketDiscount;
+				totalTicket = totalPriceKids + totalPriceStudent + totalPriceAdult + totalPriceEldery;
+				ticketDiscount = totalTicket * movieClub;
+				totalTicket -= ticketDiscount;
 				
 				total = totalTicket + totalFood;
 
@@ -394,8 +394,7 @@ public class Frame4 extends JFrame {
 		panel.add(btnNext);
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
-				
+			
 				
 				Frame5 f5 = new Frame5(name, movie, Months, Days, Hours, Minutes, showTime, seat, totalKids,
 						 				totalStudent, totalAdult, totalEldery, movieClub);
