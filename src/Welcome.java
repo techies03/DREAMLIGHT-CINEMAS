@@ -65,6 +65,8 @@ public class Welcome extends JFrame {
 		panel.setLayout(null);
 		
 		JLabel lblSneakPeak = new JLabel("");
+		
+		/* uncomment to add sneak peak
 		lblSneakPeak.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
@@ -74,6 +76,7 @@ public class Welcome extends JFrame {
 		});
 		lblSneakPeak.setBounds(256, 10, 207, 59);
 		panel.add(lblSneakPeak);
+		*/
 		
 		JLabel lblNewLabel = new JLabel("WELCOME TO DREAMLIGHT CINEMAS");
 		lblNewLabel.setForeground(honeydew);
@@ -97,9 +100,11 @@ public class Welcome extends JFrame {
 				dispose();
 			}
 		});
-		btnJump.setBackground(emerald);
+		
+		//uncomment to add sneakpeak
+		//btnJump.setBackground(emerald);
 		btnJump.setForeground(honeydew);
-		btnJump.setVisible(false);
+		btnJump.setVisible(true);
 		btnJump.setFont(new Font("Arial Black", Font.BOLD, 15));
 		btnJump.setBounds(217, 438, 183, 46);
 		panel.add(btnJump);
