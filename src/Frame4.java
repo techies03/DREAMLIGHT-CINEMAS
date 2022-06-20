@@ -75,7 +75,7 @@ public class Frame4 extends JFrame {
 	double ticketDiscount = 0.0;
 	double total = 0.0;
 
-	DecimalFormat df = new DecimalFormat("#0.00");
+	DecimalFormat df = new DecimalFormat("RM #0.00");
 
 	
 	@SuppressWarnings({ "unchecked", "rawtypes" })
@@ -230,13 +230,13 @@ public class Frame4 extends JFrame {
 		lblCheckOut.setBounds(10, 10, 197, 40);
 		panelCheckOut.add(lblCheckOut);
 		
-		JLabel lblTicket = new JLabel("TICKET RM");
+		JLabel lblTicket = new JLabel("TICKET");
 		lblTicket.setForeground(honeydew);
 		lblTicket.setFont(new Font("Arial", Font.BOLD, 15));
 		lblTicket.setBounds(10, 49, 94, 30);
 		panelCheckOut.add(lblTicket);
 		
-		JLabel lblFood = new JLabel("FOOD    RM");
+		JLabel lblFood = new JLabel("FOOD");
 		lblFood.setForeground(honeydew);
 		lblFood.setFont(new Font("Arial", Font.BOLD, 15));
 		lblFood.setBounds(10, 83, 91, 30);
@@ -326,7 +326,7 @@ public class Frame4 extends JFrame {
 		panelPay.add(txtPay);
 		txtPay.setColumns(10);
 		
-		JLabel lblChange = new JLabel("CHANGE RM");
+		JLabel lblChange = new JLabel("CHANGE");
 		lblChange.setForeground(honeydew);
 		lblChange.setBounds(10, 42, 96, 30);
 		panelPay.add(lblChange);
@@ -337,7 +337,7 @@ public class Frame4 extends JFrame {
 		panelPay.add(txtChange);
 		txtChange.setColumns(10);
 		
-		JLabel lblTotal = new JLabel("TOTAL  RM");
+		JLabel lblTotal = new JLabel("TOTAL");
 		lblTotal.setForeground(honeydew);
 		lblTotal.setBounds(10, 123, 91, 30);
 		panelCheckOut.add(lblTotal);
@@ -397,7 +397,7 @@ public class Frame4 extends JFrame {
 			
 				
 				Frame5 f5 = new Frame5(name, movie, Months, Days, Hours, Minutes, showTime, seat, totalKids,
-						 				totalStudent, totalAdult, totalEldery, movieClub);
+						 				totalStudent, totalAdult, totalEldery, movieClub, total);
 				f5.show();
 				dispose();
 			}
