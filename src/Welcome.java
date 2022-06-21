@@ -102,9 +102,9 @@ public class Welcome extends JFrame {
 		});
 		
 		//uncomment to add sneakpeak
-		//btnJump.setBackground(emerald);
+		//btnJump.setVisible(false);
+		btnJump.setBackground(emerald);
 		btnJump.setForeground(honeydew);
-		btnJump.setVisible(true);
 		btnJump.setFont(new Font("Arial Black", Font.BOLD, 15));
 		btnJump.setBounds(217, 438, 183, 46);
 		panel.add(btnJump);

@@ -412,21 +412,15 @@ public class Frame4 extends JFrame {
 				
 				
 				double totalPay = Double.parseDouble(txtPay.getText());
-				double change = 0;	
 
-				if(totalPay > total) {
+				if(totalPay > total || totalPay == total ) {
 					
 					totalPay -= total;
 					txtChange.setText(df.format(totalPay));
 					btnNext.setVisible(true);
 					
-				} else if (totalPay < total || totalPay == 0) {
-					
-					JOptionPane.showMessageDialog(btnTotal, "Warning! negative output", "Negative Output", JOptionPane.ERROR_MESSAGE);
-					
-				}
- 				else {
- 					JOptionPane.showMessageDialog(btnTotal, "No input detected", "Missing Input", JOptionPane.ERROR_MESSAGE);
+				} else {
+ 					JOptionPane.showMessageDialog(btnTotal, "Wrong input", "Error 404", JOptionPane.ERROR_MESSAGE);
 					
 				}
 				
