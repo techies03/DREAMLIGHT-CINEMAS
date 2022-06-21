@@ -25,7 +25,9 @@ import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 import java.awt.event.ActionEvent;
 
+//create class for Frame4
 public class Frame4 extends JFrame {
+
 
 	private JPanel contentPane;
 	private JTextField txtTicket;
@@ -34,6 +36,7 @@ public class Frame4 extends JFrame {
 	private JTextField txtChange;
 	private JTextField txtPay;
 
+	//declare color palette that I want to use
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -42,6 +45,7 @@ public class Frame4 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 	
+	//declare image that i want to use in this program
 	Image popcorn = new ImageIcon(this.getClass().getResource("/popcorn.png")).getImage();
 
 	
@@ -52,33 +56,37 @@ public class Frame4 extends JFrame {
 	JButton btnNext;
 	JButton btnTotal = new JButton("TOTAL");
 
-
+	//declare price
 	double regular = 9.0;
 	double large = 12.0;
+	
+	//declare total for each popcorn type
 	double totalCaramel = 0.0;
 	double totalChoco = 0.0;
 	double totalButter = 0.0;
 	double totalFood = 0.0;
 
-	
+	//declare price for customer type
 	double priceKids = 0.0;
 	double priceStudent = 0.0;
 	double priceAdult = 0.0;
 	double priceEldery = 0.0;
 	
+	//declare total price for customer type
 	double totalPriceKids = 0.0;
 	double totalPriceStudent = 0.0;
 	double totalPriceAdult = 0.0;
 	double totalPriceEldery = 0.0;
 	
+	//declare total
 	double totalTicket = 0.0;
 	double ticketDiscount = 0.0;
 	double total = 0.0;
 
+	//create money formatter
 	DecimalFormat df = new DecimalFormat("RM #0.00");
 
 	
-	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public Frame4(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime, String seat[][], int totalKids,
 					int totalStudent, int totalAdult, int totalEldery, double movieClub) {
 				
@@ -257,43 +265,59 @@ public class Frame4 extends JFrame {
 		txtTotal.setBounds(101, 121, 106, 30);
 		panelCheckOut.add(txtTotal);
 		
+		//declare combo box for payment method
 		cbPaymentMethod = new JComboBox(payMethod);
 		cbPaymentMethod.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-			
+				//assign the combo box to payType
 				String payType = (String) cbPaymentMethod.getSelectedItem();
 
 				if(payType.equals("Tng eWallet")) {
 					
+					//panelPay and button total will not appear
 					panelPay.setVisible(false);
 					btnTotal.setVisible(false);
+					
+					//button next will appear
 					btnNext.setVisible(true);
 
 				} else if(payType.equals("Grab Pay")) {
 					
+					//panelPay and button total will not appear
 					panelPay.setVisible(false);
 					btnTotal.setVisible(false);
+					
+					//button next will appear
 					btnNext.setVisible(true);
 
 
 				} else if(payType.equals("Credit / Debit")) {
 					
+					//panelPay and button total will not appear
 					panelPay.setVisible(false);
 					btnTotal.setVisible(false);
+					
+					//button next will appear
 					btnNext.setVisible(true);
 
 				} else if(payType.equals("Select Payment Method")) {
 					
+					//panelPay and button total will not appear
 					panelPay.setVisible(false);
 					btnTotal.setVisible(false);
+					
+					//button next will appear
 					btnNext.setVisible(true);
 
 
 				} else if(payType.equals("Cash")) {
 					
+					//panelPay and button total will appear
 					panelPay.setVisible(true);
 					btnTotal.setVisible(true);
+					
+					//button next will not appear
 					btnNext.setVisible(false);
 
 				}
@@ -343,42 +367,43 @@ public class Frame4 extends JFrame {
 		panelCheckOut.add(lblTotal);
 		lblTotal.setFont(new Font("Arial", Font.BOLD, 15));
 		
+		
+		//declare button calculate
 		JButton btnCalculate = new JButton("CALCULATE");
 		btnCalculate.setFont(new Font("Arial Black", Font.BOLD, 15));
 		btnCalculate.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-
-				totalCaramel(spinnerCaramelR, spinnerCarameL);
-				totalChoco(spinnerChocoR, spinnerChocoL);
-				totalButter(spinnerButterR, spinnerButterL);
 				
+				//combine all food
 				totalFood = totalCaramel(spinnerCaramelR, spinnerCarameL) + 
 							totalChoco(spinnerChocoR, spinnerChocoL) +
 							totalButter(spinnerButterR, spinnerButterL);
 
+				//set to txtFood
+				txtFood.setText(df.format(totalFood));
 
+				//declare customer type price
 				priceKids = 9.00;
 				priceStudent = 12.00;
 				priceAdult = 18.00;
 				priceEldery = 10.00;
 
-					
+				//get the total price for each customer type
 				totalPriceKids = priceKids * totalKids;
 				totalPriceStudent = priceStudent * totalStudent;
 				totalPriceAdult = priceAdult * totalAdult;
 				totalPriceEldery = priceEldery * totalEldery;
 				
+				//calculate total ticket
 				totalTicket = totalPriceKids + totalPriceStudent + totalPriceAdult + totalPriceEldery;
 				ticketDiscount = totalTicket * movieClub;
 				totalTicket -= ticketDiscount;
-				
-				total = totalTicket + totalFood;
-
-
-				txtFood.setText(df.format(totalFood));
 				txtTicket.setText(df.format(totalTicket));
-				txtTotal.setText(df.format(total));
 				
+				//total all
+				total = totalTicket + totalFood;
+				txtTotal.setText(df.format(total));
+	
 				cbPaymentMethod.setVisible(true);
 				
 			}
@@ -388,6 +413,8 @@ public class Frame4 extends JFrame {
 		btnCalculate.setBounds(20, 353, 224, 65);
 		panel.add(btnCalculate);
 		
+		
+		//create button next
 		btnNext = new JButton("NEXT");
 		btnNext.setFont(new Font("Arial Black", Font.BOLD, 15));
 		btnNext.setBounds(20, 435, 104, 65);
@@ -395,7 +422,7 @@ public class Frame4 extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			
-				
+				//go to the next frame
 				Frame5 f5 = new Frame5(name, movie, Months, Days, Hours, Minutes, showTime, seat, totalKids,
 						 				totalStudent, totalAdult, totalEldery, movieClub, total);
 				f5.show();
@@ -406,11 +433,12 @@ public class Frame4 extends JFrame {
 		btnNext.setForeground(new Color(241, 250, 238));
 		btnNext.setBackground(new Color(230, 57, 70));
 		
+		//create button total
 		btnTotal = new JButton("TOTAL");
 		btnTotal.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				
+				//get the information from txtpay
 				double totalPay = Double.parseDouble(txtPay.getText());
 
 				if(totalPay > total || totalPay == total ) {
@@ -420,7 +448,12 @@ public class Frame4 extends JFrame {
 					btnNext.setVisible(true);
 					
 				} else {
+					
+					//if totalPay is less than total, then warning message will appear
  					JOptionPane.showMessageDialog(btnTotal, "Wrong input", "Error 404", JOptionPane.ERROR_MESSAGE);
+ 					
+ 					//button next will not appear
+					btnNext.setVisible(false);
 					
 				}
 				
@@ -433,35 +466,42 @@ public class Frame4 extends JFrame {
 		btnTotal.setBounds(140, 435, 104, 65);
 		panel.add(btnTotal);
 		
-		JLabel lblNewLabel = new JLabel("");
-		lblNewLabel.setIcon(new ImageIcon(popcorn));
-		lblNewLabel.setBounds(10, 10, 540, 530);
-		panelSeatList.add(lblNewLabel);
+		JLabel lblPopcorn = new JLabel("");
+		lblPopcorn.setIcon(new ImageIcon(popcorn));
+		lblPopcorn.setBounds(10, 10, 540, 530);
+		panelSeatList.add(lblPopcorn);
 	}
 	
+	//method for calculate total caramel
 	public double totalCaramel(JSpinner spinnerCaramelR, JSpinner spinnerCarameL) {
 		
+		//set the value to a variable
 		int caramelR = (int) spinnerCaramelR.getValue();
+		
 		int caramelL = (int) spinnerCarameL.getValue();
-
+		//return total popcorn caramel
 		return totalCaramel = (caramelR * regular) + (caramelL * large);
 	}
 	
+	//method for calculate total choco
 	public double totalChoco(JSpinner spinnerChocoR, JSpinner spinnerChocoL) {
 		
+		//set the value to a variable
 		int chocoR = (int) spinnerChocoR.getValue();
 		int chocoL = (int) spinnerChocoL.getValue();
 		
-
+		//return total popcorn choco
 		return totalChoco = (chocoR * regular) + (chocoL * large);
 	}
 	
+	//method for calculate total butter
 	public double totalButter(JSpinner spinnerButteR, JSpinner spinnerButteL) {
 		
+		//set the value to a variable
 		int butterR = (int) spinnerButteR.getValue();
 		int butterL = (int) spinnerButteL.getValue();
 		
-
+		//return total popcorn butter
 		return totalButter = (butterR * regular) + (butterL * large);
 	}
 }

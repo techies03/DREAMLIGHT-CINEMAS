@@ -23,15 +23,16 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.border.TitledBorder;
 
+//create class for Frame2
 public class Frame2 extends JFrame {
 
 	protected static final String String = null;
 	protected static final double d2 = 0;
+	private JPanel contentPane;
 
 	LocalDateTime time = LocalDateTime.now();
 	
-
-	private JPanel contentPane;
+	//declare color palette that I want to use
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -40,6 +41,7 @@ public class Frame2 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 
+	//declaration for show time
 	String showTime = null;
 	String showTime11 = null;
 	String showTime13 = null;

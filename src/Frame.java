@@ -29,9 +29,10 @@ public class Frame extends JFrame {
 		});
 	}
 
-
+	//create class for Frame
 	public Frame() {
 		
+		//declare color palette that I want to use
 		Color celadonBlue = new Color(69, 123, 157);
 		Color prussianBlue = new Color(29, 53, 87);
 		Color powderBlue = new Color(168, 218, 220);
@@ -40,6 +41,7 @@ public class Frame extends JFrame {
 		Color emerald = new Color(64, 145, 108);
 		Color mint = new Color(82, 183, 136);
 		
+		//declare image that i want to use in this program
 		Image dreamlight = new ImageIcon(this.getClass().getResource("/dreamLight.png")).getImage();
 
 		setResizable(false);

@@ -33,7 +33,7 @@ import javax.swing.JTextArea;
 
 
 
-
+//create class for Frame3
 public class Frame3 extends JFrame {
 
 	private static final String String = null;
@@ -44,7 +44,9 @@ public class Frame3 extends JFrame {
 	JPanel panelMovieClub = new JPanel();
 	JPanel panelCustomers = new JPanel();
 	JRadioButton rdbtnNo = new JRadioButton("NO");
+	private final ButtonGroup buttonGroup = new ButtonGroup();
 
+	//declare color palette that I want to use
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -53,14 +55,17 @@ public class Frame3 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 	
+	//declare image that i want to use in this program
 	Image singleBlack = new ImageIcon(this.getClass().getResource("/singleBlack.png")).getImage();
 	Image singleRed = new ImageIcon(this.getClass().getResource("/singleRed.png")).getImage();
 
 	double movieClub = 0.0;
 	int totalCustomer = 0;
 	int totalPerson = 0;
+	
+	//declaration for 2d array
 							//collumn
-	String[][] seat = 	{	{"", "", "", "", "", "", ""},
+	String[][] seat = 	{	{"", "", "", "", "", "", ""}, //row
 							{"", "", "", "", "", "", ""},
 							{"", "", "", "", "", "", ""},
 						};
@@ -70,7 +75,6 @@ public class Frame3 extends JFrame {
 							{0, 0, 0, 0, 0, 0, 0,},
 						};
 
-	private final ButtonGroup buttonGroup = new ButtonGroup();
 
 	public Frame3(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime) {
 		
@@ -187,6 +191,7 @@ public class Frame3 extends JFrame {
 				
 				totalCustomer = 0;
 				
+				//if seatValue[][] == 1, it will show total customers
 				for (int i = 0; i < seatValue.length; i++) { //row
 					
 				    for (int j = 0; j < seatValue[i].length; j++) { //column
@@ -198,7 +203,7 @@ public class Frame3 extends JFrame {
 				lblTotalCustomer.setText(Integer.toString(totalCustomer));
 				
 
-			
+				//if seat[][] != null, it will show the seat that've been picked
 		        String txt = "";
 		        for(int i = 0; i < seat.length; i++){
 		        	
@@ -255,6 +260,7 @@ public class Frame3 extends JFrame {
 		lblA1.setBounds(42, 164, 64, 64);
 		panelSeatList.add(lblA1);
 		
+		//checkbox for seat A1
 		JCheckBox chckbxA1 = new JCheckBox("");
 		chckbxA1.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -290,6 +296,7 @@ public class Frame3 extends JFrame {
 		lblA2.setBounds(116, 164, 64, 64);
 		panelSeatList.add(lblA2);
 		
+		//checkbox for seat A2
 		JCheckBox chckbxA2 = new JCheckBox("");
 		chckbxA2.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -320,6 +327,7 @@ public class Frame3 extends JFrame {
 		lblA3.setBounds(280, 164, 64, 64);
 		panelSeatList.add(lblA3);
 		
+		//checkbox for seat A3
 		JCheckBox chckbxA3 = new JCheckBox("");
 		chckbxA3.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {

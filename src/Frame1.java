@@ -1,4 +1,6 @@
 import javax.swing.*;
+
+
 import javax.swing.Timer;
 
 import java.awt.*;
@@ -26,13 +28,22 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.ItemListener;
 import java.awt.event.ItemEvent;
 
+
+//create class for Frame1
 public class Frame1 extends JFrame {
 
 	private static final String String = null;
 	private JPanel contentPane;
+	private final ButtonGroup buttonGroup = new ButtonGroup();
+
+	JLabel lblDate = new JLabel("date");
+	String showDate = null;
+	String date = null;
+	String movie = null;
 	
 	Font font = new Font("Arial", Font.BOLD, 14);
 	
+	//declare color palette that I want to use
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -41,29 +52,26 @@ public class Frame1 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 	
+	//declare image that i want to use in this program
 	Image eyesOnMe = new ImageIcon(this.getClass().getResource("/eyesOnMe.jpg")).getImage();
 	Image drStrange = new ImageIcon(this.getClass().getResource("/drStrange.jpg")).getImage();
 	Image topGun = new ImageIcon(this.getClass().getResource("/topGun.jpg")).getImage();
 	Image minions = new ImageIcon(this.getClass().getResource("/minions.jpg")).getImage();
 
-	JLabel lblDate = new JLabel("date");
-	private final ButtonGroup buttonGroup = new ButtonGroup();
-
-	String showDate = null;
-	String date = null;
-	String movie = null;
 	
-
-	private int second = 0;
-	private int minute = 0;
-	private int hour = 0;
-	private int plus = 0;
+	//declaration for Uptime variable
+	int hourUptime = 0;
+	int minuteUptime = 0;
+	int secondUptime = 0;
+	
+	//declaration for uptime
 	String seconds, minutes, hours;
 	Timer timer;
 	Thread clock;
 	DecimalFormat timeFormat = new DecimalFormat("00");
 	
-	String day1 = null;
+	//declaration for time related variable
+	int plus = 0;
 	int Months = 0;
 	int Days = 0;
 	int Hours = 0;
@@ -453,32 +461,32 @@ public class Frame1 extends JFrame {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 								
-					if (second <= 59) {
-						second++;
+					if (secondUptime <= 59) {
+						secondUptime++;
 					
-						seconds = timeFormat.format(second);
-						minutes = timeFormat.format(minute);
-						hours = timeFormat.format(hour);
+						seconds = timeFormat.format(secondUptime);
+						minutes = timeFormat.format(minuteUptime);
+						hours = timeFormat.format(hourUptime);
 						lblUpTime.setText(hours + ":" + minutes + ":" + seconds);
 					
-						if(second == 60) {
+						if(secondUptime == 60) {
 					
-							second = 0;
-							minute++;
+							secondUptime = 0;
+							minuteUptime++;
 					
-							seconds = timeFormat.format(second);
-							minutes = timeFormat.format(minute);
-							hours = timeFormat.format(hour);
+							seconds = timeFormat.format(secondUptime);
+							minutes = timeFormat.format(minuteUptime);
+							hours = timeFormat.format(hourUptime);
 							lblUpTime.setText(hours + ":" + minutes + ":" + seconds);
 								
-							if(minute == 60) {
+							if(minuteUptime == 60) {
 								
-								minute = 0;
-								hour++;
+								minuteUptime = 0;
+								hourUptime++;
 								
-								seconds = timeFormat.format(second);
-								minutes = timeFormat.format(minute);
-								hours = timeFormat.format(hour);
+								seconds = timeFormat.format(secondUptime);
+								minutes = timeFormat.format(minuteUptime);
+								hours = timeFormat.format(hourUptime);
 								lblUpTime.setText(hours + ":" + minutes + ":" + seconds);
 							}
 						}

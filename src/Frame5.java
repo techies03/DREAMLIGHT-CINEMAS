@@ -36,13 +36,14 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+//create class for Frame5
 public class Frame5 extends JFrame {
 
 	private JPanel contentPane;
 	
 	String num = getRandBookingNum();
 
-	
+	//declare color palette that I want to use
 	Color celadonBlue = new Color(69, 123, 157);
 	Color prussianBlue = new Color(29, 53, 87);
 	Color powderBlue = new Color(168, 218, 220);
@@ -51,8 +52,10 @@ public class Frame5 extends JFrame {
 	Color emerald = new Color(64, 145, 108);
 	Color mint = new Color(82, 183, 136);
 
+	//create money formatter
 	DecimalFormat df = new DecimalFormat("RM #0.00");
 	
+	//declare image that i want to use in this program
 	Image qrCode = new ImageIcon(this.getClass().getResource("/qrCode.png")).getImage();
 
 
