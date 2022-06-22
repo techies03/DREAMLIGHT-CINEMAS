@@ -11,10 +11,6 @@
    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/techies03/DREAMLIGHT-CINEMAS?color=%23FF7800&logo=java&style=for-the-badge"></a>
    <a href="https://discordapp.com/users/553463605769535490"><img alt="Discord" src="https://img.shields.io/discord/900368184924852245?color=%235865F2&logo=discord&logoColor=white&style=for-the-badge"></a>
 </p>
-
-<p align="center">
-   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/techies03/DREAMLIGHT-CINEMAS?color=%23FF7800&logo=java&style=for-the-badge"></a>
-   <a href="https://discordapp.com/users/553463605769535490"><img alt="Discord" src="https://img.shields.io/discord/900368184924852245?color=%235865F2&logo=discord&logoColor=white&style=for-the-badge"></a>
    
 DREAMLIGHT CINEMAS
 =============================
