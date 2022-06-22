@@ -73,6 +73,7 @@ public class Frame2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//create a panel
 		JPanel panel = new JPanel();
 		panel.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(29, 53, 87), new Color(29, 53, 87)), "MOVIE TITLE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panel.setBounds(10, 10, 546, 80);
@@ -80,6 +81,7 @@ public class Frame2 extends JFrame {
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
+		//create lblMovie
 		JLabel lblMovie = new JLabel("");
 		lblMovie.setForeground(honeydew);
 		lblMovie.setHorizontalAlignment(SwingConstants.CENTER);
@@ -88,7 +90,7 @@ public class Frame2 extends JFrame {
 		lblMovie.setBounds(10, 10, 526, 60);
 		panel.add(lblMovie);
 		
-		
+		//create panelShowTime
 		JPanel panelShowTime = new JPanel();
 		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(29, 53, 87), new Color(29, 53, 87)), "AVAILABLE SHOWTIMES", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelShowTime.setBackground(celadonBlue);
@@ -96,14 +98,15 @@ public class Frame2 extends JFrame {
 		contentPane.add(panelShowTime);
 		panelShowTime.setLayout(null);
 		
+		//create panelShowBookingDate
 		JPanel panelShowBookingDate = new JPanel();
 		panelShowBookingDate.setBackground(prussianBlue);
 		panelShowBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(69, 123, 157), new Color(69, 123, 157)), "BOOKING DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelShowBookingDate.setBounds(18, 25, 504, 61);
 		panelShowTime.add(panelShowBookingDate);
-		
 		panelShowBookingDate.setLayout(null);
 		
+		//create lblTime
 		JLabel lblTime = new JLabel("");
 		lblTime.setBounds(8, 10, 486, 42);
 		panelShowBookingDate.add(lblTime);
@@ -112,6 +115,7 @@ public class Frame2 extends JFrame {
 		lblTime.setHorizontalAlignment(SwingConstants.CENTER);
 		lblTime.setText(getCurrentDate(Months, Days));
 		
+		//create panelShowTime1
 		JPanel panelShowTime1 = new JPanel();
 		panelShowTime1.setBackground(prussianBlue);
 		panelShowTime1.setBounds(18, 96, 153, 71);
@@ -119,6 +123,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime1);
 		panelShowTime1.setLayout(null);
 		
+		//create lblShowTime1
 		JLabel lblShowTime1 = new JLabel("");
 		lblShowTime1.setForeground(mint);
 		lblShowTime1.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -126,6 +131,7 @@ public class Frame2 extends JFrame {
 		lblShowTime1.setBounds(0, 0, 153, 71);
 		panelShowTime1.add(lblShowTime1);
 		
+		//create panelShowTime2
 		JPanel panelShowTime2 = new JPanel();
 		panelShowTime2.setBackground(prussianBlue);
 		panelShowTime2.setBounds(193, 96, 153, 71);
@@ -133,6 +139,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime2);
 		panelShowTime2.setLayout(null);
 		
+		//create lblShowTime2
 		JLabel lblShowTime2 = new JLabel("");
 		lblShowTime2.setForeground(mint);
 		lblShowTime2.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -140,7 +147,7 @@ public class Frame2 extends JFrame {
 		lblShowTime2.setBounds(0, 10, 153, 51);
 		panelShowTime2.add(lblShowTime2);
 		
-		
+		//create panelShowTime3
 		JPanel panelShowTime3 = new JPanel();
 		panelShowTime3.setBackground(prussianBlue);
 		panelShowTime3.setBounds(368, 96, 153, 71);
@@ -148,6 +155,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime3);
 		panelShowTime3.setLayout(null);
 		
+		//create lblShowTime3
 		JLabel lblShowTime3 = new JLabel("");
 		lblShowTime3.setForeground(mint);
 		lblShowTime3.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -155,6 +163,7 @@ public class Frame2 extends JFrame {
 		lblShowTime3.setBounds(0, 0, 153, 71);
 		panelShowTime3.add(lblShowTime3);
 		
+		//create panelShowTime4
 		JPanel panelShowTime4 = new JPanel();
 		panelShowTime4.setBackground(prussianBlue);
 		panelShowTime4.setBounds(18, 188, 153, 71);
@@ -162,6 +171,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime4);
 		panelShowTime4.setLayout(null);
 		
+		//create lblShowTime4
 		JLabel lblShowTime4 = new JLabel("");
 		lblShowTime4.setForeground(mint);
 		lblShowTime4.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -169,6 +179,7 @@ public class Frame2 extends JFrame {
 		lblShowTime4.setBounds(0, 0, 153, 71);
 		panelShowTime4.add(lblShowTime4);
 		
+		//create panelShowTime5
 		JPanel panelShowTime5 = new JPanel();
 		panelShowTime5.setBackground(prussianBlue);
 		panelShowTime5.setBounds(193, 188, 153, 71);
@@ -176,6 +187,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime5);
 		panelShowTime5.setLayout(null);
 		
+		//create lblShowTime5
 		JLabel lblShowTime5 = new JLabel("");
 		lblShowTime5.setForeground(mint);
 		lblShowTime5.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -183,6 +195,7 @@ public class Frame2 extends JFrame {
 		lblShowTime5.setBounds(0, 0, 153, 71);
 		panelShowTime5.add(lblShowTime5);
 		
+		//create panelShowTime6
 		JPanel panelShowTime6 = new JPanel();
 		panelShowTime6.setBackground(prussianBlue);
 		panelShowTime6.setBounds(369, 188, 153, 71);
@@ -190,6 +203,7 @@ public class Frame2 extends JFrame {
 		panelShowTime.add(panelShowTime6);
 		panelShowTime6.setLayout(null);
 		
+		//create lblShowTime6
 		JLabel lblShowTime6 = new JLabel("");
 		lblShowTime6.setForeground(mint);
 		lblShowTime6.setFont(new Font("Arial Black", Font.BOLD, 20));
@@ -197,15 +211,16 @@ public class Frame2 extends JFrame {
 		lblShowTime6.setBounds(0, 0, 153, 71);
 		panelShowTime6.add(lblShowTime6);
 		
+		//create btnBack
 		JButton btnBack = new JButton("BACK");
 		btnBack.setBounds(19, 276, 152, 50);
 		panelShowTime.add(btnBack);
 		btnBack.setBackground(imperialRed);
 		btnBack.setForeground(honeydew);
-	
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				//go to frame1
 				Frame1 b = new Frame1(name);
 				b.show();
 				dispose();
@@ -215,6 +230,7 @@ public class Frame2 extends JFrame {
 		
 		if(Days > currentDay) {
 			
+			//set all the panel to true
 			panelShowTime1.setVisible(true);
 			panelShowTime2.setVisible(true);
 			panelShowTime3.setVisible(true);
@@ -222,6 +238,7 @@ public class Frame2 extends JFrame {
 			panelShowTime5.setVisible(true);
 			panelShowTime6.setVisible(true);
 
+			//assign the showtime
 			showTime11 = "11:00 AM";
 			showTime13 = "1:00 PM";
 			showTime15 = "3:00 PM";
@@ -229,6 +246,7 @@ public class Frame2 extends JFrame {
 			showTime20 = "8:00 PM";
 			showTime22 = "9:00 PM";
 
+			//set the showTime to lblshowTime
 			lblShowTime1.setText(showTime11);
 			lblShowTime2.setText(showTime13);
 			lblShowTime3.setText(showTime15);
@@ -245,6 +263,7 @@ public class Frame2 extends JFrame {
 				
 				if (bookingDateTime.isBefore(hours11)) {
 					
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					panelShowTime2.setVisible(true);
 					panelShowTime3.setVisible(true);
@@ -252,6 +271,7 @@ public class Frame2 extends JFrame {
 					panelShowTime5.setVisible(true);
 					panelShowTime6.setVisible(true);
 
+					//assign the showtime
 					showTime11 = "11:00 AM";
 					showTime13 = "1:00 PM";
 					showTime15 = "3:00 PM";
@@ -259,6 +279,7 @@ public class Frame2 extends JFrame {
 					showTime20 = "8:00 PM";
 					showTime22 = "9:00 PM";
 
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime11);
 					lblShowTime2.setText(showTime13);
 					lblShowTime3.setText(showTime15);
@@ -267,19 +288,22 @@ public class Frame2 extends JFrame {
 					lblShowTime6.setText(showTime22);
 					
 				} else if (bookingDateTime.isBefore(hours13)) {
-						
+					
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					panelShowTime2.setVisible(true);
 					panelShowTime3.setVisible(true);
 					panelShowTime4.setVisible(true);
 					panelShowTime5.setVisible(true);
 
+					//assign the showtime
 					showTime13 = "1:00 PM";
 					showTime15 = "3:00 PM";
 					showTime19 = "7:00 PM";
 					showTime20 = "8:00 PM";
 					showTime22 = "9:00 PM";
 					
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime13);
 					lblShowTime2.setText(showTime15);
 					lblShowTime3.setText(showTime19);
@@ -288,16 +312,19 @@ public class Frame2 extends JFrame {
 	
 				} else if (bookingDateTime.isBefore(hours15)) {
 				
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					panelShowTime2.setVisible(true);
 					panelShowTime3.setVisible(true);
 					panelShowTime4.setVisible(true);
 					
+					//assign the showtime
 					showTime15 = "3:00 PM";
 					showTime19 = "7:00 PM";
 					showTime20 = "8:00 PM";
 					showTime22 = "9:00 PM";
 					
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime15);
 					lblShowTime2.setText(showTime19);
 					lblShowTime3.setText(showTime20);
@@ -305,46 +332,56 @@ public class Frame2 extends JFrame {
 
 				}  else if (bookingDateTime.isBefore(hours19)) {
 				
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					panelShowTime2.setVisible(true);
 					panelShowTime3.setVisible(true);
 					
+					//assign the showtime
 					showTime19 = "7:00 PM";
 					showTime20 = "8:00 PM";
 					showTime22 = "9:00 PM";
 					
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime19);
 					lblShowTime2.setText(showTime20);
 					lblShowTime3.setText(showTime22);
 					
 				}  else if (bookingDateTime.isBefore(hours20)) {
 				
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					panelShowTime2.setVisible(true);
 					
+					//assign the showtime
 					showTime20 = "8:00 PM";
 					showTime22 = "9:00 PM";
 					
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime20);
 					lblShowTime2.setText(showTime22);
 
 				}  else if (bookingDateTime.isBefore(hours22)) {
 				
+					//set all the panel to true
 					panelShowTime1.setVisible(true);
 					
+					//assign the showtime
 					showTime22 = "9:00 PM";
 
+					//set the showTime to lblshowTime
 					lblShowTime1.setText(showTime22);
 
 				} else {
 					
+					//warning message
 					JOptionPane.showMessageDialog(null, "Select date first !", "Date Missing", JOptionPane.ERROR_MESSAGE);
 				}
 				
 			}
 		}
 		
-		//mouseClick
+		//mouseClick listener for lblShowTime1
 		lblShowTime1.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -365,6 +402,7 @@ public class Frame2 extends JFrame {
 			}
 		});
 		
+		//mouseClick listener for lblShowTime2
 		lblShowTime2.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -385,6 +423,7 @@ public class Frame2 extends JFrame {
 			}
 		});
 		
+		//mouseClick listener for lblShowTime3
 		lblShowTime3.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -405,6 +444,7 @@ public class Frame2 extends JFrame {
 			}
 		});
 		
+		//mouseClick listener for lblShowTime4
 		lblShowTime4.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -425,6 +465,7 @@ public class Frame2 extends JFrame {
 			}
 		});
 		
+		//mouseClick listener for lblShowTime5
 		lblShowTime5.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -445,6 +486,7 @@ public class Frame2 extends JFrame {
 			}
 		});
 		
+		//mouseClick listener for lblShowTime6
 		lblShowTime6.addMouseListener(new MouseAdapter() {
 			
 			public void mouseClicked(MouseEvent e) {
@@ -467,12 +509,14 @@ public class Frame2 extends JFrame {
 		
 	}
 	
+	//method for getCurrentDate
 	public String getCurrentDate(int Months, int Days) {
 	    return LocalDate.of(2022, Months, Days)
 	    		.format(DateTimeFormatter
 	    		.ofPattern("d MMM uuuu (EEEE)"));
 	}
 	
+	//method for getCurrentDateTime
 	public String getCurrentTime(int Hours, int Minutes) {
 	    return LocalTime.of(Hours, Minutes)
 	    		.format(DateTimeFormatter

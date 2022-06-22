@@ -44,7 +44,6 @@ public class Frame extends JFrame {
 		//declare image that i want to use in this program
 		Image dreamlight = new ImageIcon(this.getClass().getResource("/dreamLight.png")).getImage();
 
-		setResizable(false);
 		setForeground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(50, 100, 500, 300);
@@ -59,23 +58,27 @@ public class Frame extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//create lblLogo and put the image Icon
 		JLabel lblLogo = new JLabel("");
 		lblLogo.setIcon(new ImageIcon(dreamlight));
 		lblLogo.setBounds(178, 10, 145, 107);
 		contentPane.add(lblLogo);
 		
+		//create lblUsername
 		JLabel lblUsername = new JLabel("USERNAME : ");
 		lblUsername.setForeground(honeydew);
 		lblUsername.setFont(new Font("Arial", Font.BOLD, 15));
 		lblUsername.setBounds(68, 102, 100, 43);
 		contentPane.add(lblUsername);
 		
+		//create lblPassword
 		JLabel lblPassword = new JLabel("PASSWORD : ");
 		lblPassword.setForeground(honeydew);
 		lblPassword.setFont(new Font("Arial", Font.BOLD, 15));
 		lblPassword.setBounds(68, 145, 120, 43);
 		contentPane.add(lblPassword);
 		
+		//create textfield to input username
 		txtUsername = new JTextField();
 		txtUsername.setFont(new Font("Arial", txtUsername.getFont().getStyle() | Font.BOLD, 12));
 		txtUsername.setToolTipText("Enter Staff Username");
@@ -83,6 +86,7 @@ public class Frame extends JFrame {
 		txtUsername.setBounds(178, 115, 237, 20);
 		contentPane.add(txtUsername);
 		
+		//create passwordfield to imput password
 		txtPassword = new JPasswordField();
 		txtPassword.setEchoChar('*');
 		txtPassword.setFont(new Font("Arial", txtPassword.getFont().getStyle() | Font.BOLD, 14));
@@ -91,11 +95,13 @@ public class Frame extends JFrame {
 		txtPassword.setBounds(178, 155, 237, 20);
 		contentPane.add(txtPassword);
 		
+		//create button login
 		JButton btnLogin = new JButton("LOGIN");
 		btnLogin.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
 			public void actionPerformed(ActionEvent e) {
 				
+				//declare array for username and password
 				String[] Username = {"muqsit", "danial", "irfan", "kamil"};
 				String[] Password = {"123"};
 				String name = null;
@@ -133,6 +139,7 @@ public class Frame extends JFrame {
 						dispose();
 
 				} else  {
+					//error message
  						JOptionPane.showMessageDialog(btnLogin, "Wrong input", "Wrong Input", JOptionPane.ERROR_MESSAGE);
 
 				}
@@ -145,6 +152,7 @@ public class Frame extends JFrame {
 		btnLogin.setBounds(273, 198, 111, 36);
 		contentPane.add(btnLogin);
 		
+		//create button close
 		JButton btnClose = new JButton("CLOSE");
 		btnClose.setForeground(Color.WHITE);
 		btnClose.setBackground(Color.RED);
@@ -152,6 +160,7 @@ public class Frame extends JFrame {
 		btnClose.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				//exit the program
 				System.exit(0);
 			}
 		});

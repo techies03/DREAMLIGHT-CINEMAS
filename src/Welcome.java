@@ -93,10 +93,12 @@ public class Welcome extends JFrame {
 		txtpnAadsasdasdaAsdasdasd.setBounds(20, 87, 633, 337);
 		panel.add(txtpnAadsasdasdaAsdasdasd);
 		
+		//create button Jump
 		btnJump = new JButton("JUMP IN !");
 		btnJump.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				//go to next frame
 				Frame f = new Frame();
 				f.show();
 				dispose();

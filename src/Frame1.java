@@ -76,22 +76,6 @@ public class Frame1 extends JFrame {
 	int Days = 0;
 	int Hours = 0;
 	int Minutes = 0;
-
-	
-	double memberPrice = 0.00;
-	
-	double totalPriceKids = 0.00;
-	double totalPriceStudent = 0.00;
-	double totalPriceAdult = 0.00;
-	double totalPriceEldery = 0.00;
-
-	double priceKids = 0.00;
-	double priceStudent = 0.00;
-	double priceAdult = 0.00;
-	double priceEldery = 0.00;
-	
-
-	
 	
 	public Frame1(String name) {
 		
@@ -104,7 +88,7 @@ public class Frame1 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		
+		//create panel for clock
 		JPanel panelClock = new JPanel();
 		panelClock.setBounds(50, 10, 250, 57);
 		panelClock.setBackground(celadonBlue);
@@ -112,32 +96,37 @@ public class Frame1 extends JFrame {
 		contentPane.add(panelClock);
 		panelClock.setLayout(null);
 		
-		//__Digital Clock Method Using Thread Programming__//
+		//create panel clock
 		JLabel lblClock = new JLabel("clock");
 		lblClock.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		//call method clock to use the clock method
 		clock(lblClock);
+		//start the clock
 		clock.start();
+		
 		lblClock.setForeground(honeydew);
 		lblClock.setBounds(10, 10, 230, 37);
 		panelClock.add(lblClock);
 		lblClock.setFont(new Font("Arial", Font.BOLD, 16));
 		
-		
+		//create panel date
 		JPanel panelDate = new JPanel();
 		panelDate.setBounds(350, 10, 250, 57);
 		panelDate.setBackground(celadonBlue);
 		panelDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelDate);
 		panelDate.setLayout(null);
-		lblDate.setHorizontalAlignment(SwingConstants.CENTER);
 		
+		//set lblDate to method getCurrentDAte
+		lblDate.setHorizontalAlignment(SwingConstants.CENTER);
 		lblDate.setText(getCurrentDate());
 		lblDate.setForeground(honeydew);
 		lblDate.setBounds(10, 10, 230, 37);
 		lblDate.setFont(new Font("Arial", Font.BOLD, 16));
 		panelDate.add(lblDate);
 		
-		
+		//create panel staff name
 		JPanel panelStaffName = new JPanel();
 		panelStaffName.setBounds(650, 10, 250, 57);
 		panelStaffName.setBackground(celadonBlue);
@@ -145,6 +134,7 @@ public class Frame1 extends JFrame {
 		panelStaffName.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "STAFF NAME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelStaffName);
 		
+		//create lblStaffName
 		JLabel lblStaffName = new JLabel("staff name");
 		lblStaffName.setHorizontalAlignment(SwingConstants.CENTER);
 		lblStaffName.setForeground(honeydew);
@@ -153,7 +143,7 @@ public class Frame1 extends JFrame {
 		lblStaffName.setText(name);
 		lblStaffName.setFont(new Font("Arial", Font.BOLD, 14));
 		
-		
+		//create panelUpTime
 		JPanel panelUptime = new JPanel();
 		panelUptime.setBounds(950, 10, 250, 57);
 		panelUptime.setBackground(celadonBlue);
@@ -161,11 +151,15 @@ public class Frame1 extends JFrame {
 		panelUptime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "UPTIME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		contentPane.add(panelUptime);
 		
-		//stopwatch
+		//create lblUpTime
 		JLabel lblUpTime = new JLabel("");
 		lblUpTime.setHorizontalAlignment(SwingConstants.CENTER);
+		
+		//call the method uptime
 		upTime(lblUpTime);
+		//start the method uptime
 		timer.start();
+		
 		lblUpTime.setForeground(honeydew);
 		lblUpTime.setBounds(10, 10, 230, 37);
 		panelUptime.add(lblUpTime);
@@ -173,13 +167,14 @@ public class Frame1 extends JFrame {
 		lblUpTime.setFont(new Font("Arial", Font.BOLD, 16));
 		
 
-		
+		//create panelShowMovie
 		JPanel panelShowMovie = new JPanel();
 		panelShowMovie.setBounds(10, 91, 1246, 527);
 		panelShowMovie.setBackground(prussianBlue);
 		contentPane.add(panelShowMovie);
 		panelShowMovie.setLayout(null);
 		
+		//create panelEyesOnMe
 		JPanel panelEyesOnMe = new JPanel();
 		panelEyesOnMe.setBackground(celadonBlue);
 		panelEyesOnMe.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "EYES ON ME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
@@ -188,12 +183,13 @@ public class Frame1 extends JFrame {
 		panelEyesOnMe.setVisible(false);
 		panelEyesOnMe.setLayout(null);
 		
+		//create llbPosyerEyesOnMe and put the image
 		JLabel lblPosterEyesOnMe = new JLabel("");
 		lblPosterEyesOnMe.setBounds(15, 15, 250, 350);
 		panelEyesOnMe.add(lblPosterEyesOnMe);
 		lblPosterEyesOnMe.setIcon(new ImageIcon(eyesOnMe));
 		
-		
+		//create panelDrStrange
 		JPanel panelDrStrange = new JPanel();
 		panelDrStrange.setLayout(null);
 		panelDrStrange.setBackground(celadonBlue);
@@ -202,12 +198,13 @@ public class Frame1 extends JFrame {
 		panelShowMovie.add(panelDrStrange);
 		panelDrStrange.setVisible(false);
 		
+		//create lblPosterDrStrange and put the image
 		JLabel lblPosterDrStrange = new JLabel("");
 		lblPosterDrStrange.setIcon(new ImageIcon(drStrange));
 		lblPosterDrStrange.setBounds(15, 15, 250, 350);
 		panelDrStrange.add(lblPosterDrStrange);
 		
-		
+		//create panelTopGun
 		JPanel panelTopGun = new JPanel();
 		panelTopGun.setLayout(null);		
 		panelTopGun.setBackground(celadonBlue);
@@ -216,12 +213,13 @@ public class Frame1 extends JFrame {
 		panelShowMovie.add(panelTopGun);
 		panelTopGun.setVisible(false);
 		
+		//create lblPosterTopGun and put the image
 		JLabel lblPosterTopGun = new JLabel("");
 		lblPosterTopGun.setIcon(new ImageIcon(topGun));
 		lblPosterTopGun.setBounds(15, 15, 250, 350);
 		panelTopGun.add(lblPosterTopGun);
 		
-		
+		//create panelMinions
 		JPanel panelMinions = new JPanel();
 		panelMinions.setLayout(null);		
 		panelMinions.setBackground(celadonBlue);
@@ -230,20 +228,21 @@ public class Frame1 extends JFrame {
 		panelShowMovie.add(panelMinions);
 		panelMinions.setVisible(false);
 		
+		//create lblPosterMinions and put the image
 		JLabel lblPosterMinions = new JLabel("");
 		lblPosterMinions.setIcon(new ImageIcon(minions));
 		lblPosterMinions.setBounds(15, 15, 250, 350);
 		panelMinions.add(lblPosterMinions);
 		
-		
+		//create panelShowDate
 		JPanel panelShowDate = new JPanel();
 		panelShowDate.setBounds(302, 5, 608, 50);
 		panelShowMovie.add(panelShowDate);
-		
 		panelShowDate.setBackground(celadonBlue);
 		panelShowDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(241, 250, 238)), "DATE LIST", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
 		panelShowDate.setLayout(null);
 
+		//declare array for datePick
 		String[] datePick= {null, incrementDate(0)
 				, incrementDate(1)
 				, incrementDate(2)
@@ -254,21 +253,20 @@ public class Frame1 extends JFrame {
 				, incrementDate(7)};
 		
 		@SuppressWarnings({ "rawtypes", "unchecked" })
+		
+		//create cbShowDate
 		JComboBox cbShowDate = new JComboBox(datePick);
-		cbShowDate.addItemListener(new ItemListener() {
-			public void itemStateChanged(ItemEvent e) {
-			}
-		});
 		cbShowDate.setBounds(145, 17, 274, 23);
 		panelShowDate.add(cbShowDate);
 		
+		//create lblShowDate
 		JLabel lblShowDate = new JLabel("");
 		lblShowDate.setBounds(429, 17, 170, 23);
 		lblShowDate.setForeground(honeydew);
 		panelShowDate.add(lblShowDate);
 		lblShowDate.setFont(new Font("Arial", Font.BOLD, 14));
 		
-
+		//create button confirm
 		JButton btnConfirm = new JButton("CONFIRM");
 		btnConfirm.setBounds(10, 17, 115, 23);
 		panelShowDate.add(btnConfirm);
@@ -373,6 +371,7 @@ public class Frame1 extends JFrame {
 			}
 		});
 		
+		//create btnBookEyesOnMe
 		JButton btnBookEyesOnMe = new JButton("BOOK NOW");
 		btnBookEyesOnMe.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -389,6 +388,7 @@ public class Frame1 extends JFrame {
 		btnBookEyesOnMe.setForeground(honeydew);
 		panelEyesOnMe.add(btnBookEyesOnMe);
 		
+		//create btnBookDrStrange
 		JButton btnBookDrStrange = new JButton("BOOK NOW");
 		btnBookDrStrange.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -405,6 +405,7 @@ public class Frame1 extends JFrame {
 		btnBookDrStrange.setForeground(honeydew);
 		panelDrStrange.add(btnBookDrStrange);
 		
+		//create btnBookTopGun
 		JButton btnBookTopGun = new JButton("BOOK NOW");
 		btnBookTopGun.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -421,6 +422,7 @@ public class Frame1 extends JFrame {
 		btnBookTopGun.setForeground(honeydew);
 		panelTopGun.add(btnBookTopGun);
 		
+		//create btnBookMinions
 		JButton btnBookMinions = new JButton("BOOK NOW");
 		btnBookMinions.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -437,7 +439,7 @@ public class Frame1 extends JFrame {
 		btnBookMinions.setForeground(honeydew);
 		panelMinions.add(btnBookMinions);
 		
-		
+		//create btnLogOut
 		JButton btnLogOut = new JButton("LOG OUT");
 		btnLogOut.setBackground(imperialRed);
 		btnLogOut.setForeground(honeydew);
@@ -446,6 +448,7 @@ public class Frame1 extends JFrame {
 		btnLogOut.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
+				//go to logIn frame
 				Frame a = new Frame();
 				a.show();
 				dispose();
@@ -454,6 +457,7 @@ public class Frame1 extends JFrame {
 		
 	}
 
+	//method for upTime
 	public void upTime(JLabel lblUpTime) {
 		
 		timer = new Timer(1000, new ActionListener() {
@@ -495,6 +499,7 @@ public class Frame1 extends JFrame {
 		});
 	}
 	
+	//method for clock
 	public void clock(JLabel lblClock) {
 		
 		clock = new Thread() {
@@ -522,6 +527,7 @@ public class Frame1 extends JFrame {
 		
 	}
 
+	//method for incrementDate
 	static public String incrementDate(int plus) {
 	    return LocalDateTime.now()
 	    		.plusDays(plus)
@@ -529,24 +535,28 @@ public class Frame1 extends JFrame {
 	    	    .ofPattern("d MMM uuuu EEEE"));
 	  }
 	
+	//method for getCurrentDateTme
 	public String getCurrentDateTime() {
 	    return LocalDateTime.now()
 	    		.format(DateTimeFormatter
 	    		.ofPattern("dd/MM/yyyy HH:mm:ss"));
 	}
 	
+	//method for getCurrentDate
 	public String getCurrentDate() {
 	    return LocalDate.now()
 	    		.format(DateTimeFormatter
 	    		.ofPattern("d MMM uuuu EEEE"));
 	}
 	
+	//method for getCurrentTime
 	public String getCurrentTime() {
 	    return LocalDateTime.now()
 	    		.format(DateTimeFormatter
 	    		.ofPattern("HH:mm:ss"));
 	}
 	
+	//main method
 	public static void main(String [] args){
 		
 		Frame1 f1 = new Frame1(String);
