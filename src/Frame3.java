@@ -78,7 +78,6 @@ public class Frame3 extends JFrame {
 
 	public Frame3(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime) {
 		
-		
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 1280, 720);
@@ -88,6 +87,7 @@ public class Frame3 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//create panelMovieTitle
 		JPanel panelMovieTitle = new JPanel();
 		panelMovieTitle.setLayout(null);
 		panelMovieTitle.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "MOVIE TITLE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
@@ -95,6 +95,7 @@ public class Frame3 extends JFrame {
 		panelMovieTitle.setBounds(50, 10, 370, 57);
 		contentPane.add(panelMovieTitle);
 		
+		//create lblMovieTitle
 		JLabel lblMovieTitle = new JLabel("");
 		lblMovieTitle.setText(movie);
 		lblMovieTitle.setHorizontalAlignment(SwingConstants.CENTER);
@@ -103,6 +104,7 @@ public class Frame3 extends JFrame {
 		lblMovieTitle.setBounds(10, 10, 350, 37);
 		panelMovieTitle.add(lblMovieTitle);
 		
+		//create panelBookingDate
 		JPanel panelBookingDate = new JPanel();
 		panelBookingDate.setLayout(null);
 		panelBookingDate.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "BOOKING DATE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
@@ -110,6 +112,7 @@ public class Frame3 extends JFrame {
 		panelBookingDate.setBounds(433, 10, 250, 57);
 		contentPane.add(panelBookingDate);
 		
+		//create lblBookingDate
 		JLabel lblBookingDate = new JLabel("");
 		lblBookingDate.setHorizontalAlignment(SwingConstants.CENTER);
 		lblBookingDate.setForeground(new Color(241, 250, 238));
@@ -118,6 +121,7 @@ public class Frame3 extends JFrame {
 		lblBookingDate.setText(getCurrentDate(Months, Days));
 		panelBookingDate.add(lblBookingDate);
 		
+		//create panelHallType
 		JPanel panelHallType = new JPanel();
 		panelHallType.setLayout(null);
 		panelHallType.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "HALL TYPE", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
@@ -125,6 +129,7 @@ public class Frame3 extends JFrame {
 		panelHallType.setBounds(703, 10, 250, 57);
 		contentPane.add(panelHallType);
 		
+		//create lblOnyx
 		JLabel lblOnyx = new JLabel("ONYX");
 		lblOnyx.setHorizontalAlignment(SwingConstants.CENTER);
 		lblOnyx.setForeground(new Color(241, 250, 238));
@@ -132,6 +137,7 @@ public class Frame3 extends JFrame {
 		lblOnyx.setBounds(10, 10, 230, 37);
 		panelHallType.add(lblOnyx);
 		
+		//create panelShowTime
 		JPanel panelShowTime = new JPanel();
 		panelShowTime.setLayout(null);
 		panelShowTime.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(255, 255, 255)), "SHOW TIME", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
@@ -139,6 +145,7 @@ public class Frame3 extends JFrame {
 		panelShowTime.setBounds(973, 10, 250, 57);
 		contentPane.add(panelShowTime);
 		
+		//create lblShowTime
 		JLabel lblShowTime = new JLabel("");
 		lblShowTime.setText(showTime);
 		lblShowTime.setHorizontalAlignment(SwingConstants.CENTER);
@@ -147,6 +154,7 @@ public class Frame3 extends JFrame {
 		lblShowTime.setBounds(10, 10, 230, 37);
 		panelShowTime.add(lblShowTime);
 		
+		//create panelInfo
 		panelInfo = new JPanel();
 		panelInfo.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(241, 250, 238), new Color(241, 250, 238)), "INFORMATION", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(168, 218, 220)));
 		panelInfo.setBounds(893, 108, 330, 550);
@@ -155,35 +163,41 @@ public class Frame3 extends JFrame {
 		panelInfo.setVisible(false);
 		panelInfo.setLayout(null);
 		
+		//create panelSeatList
 		JPanel panelSeatList = new JPanel();
 		panelSeatList.setBackground(prussianBlue);
 		panelSeatList.setBounds(50, 108, 833, 550);
 		contentPane.add(panelSeatList);
 		panelSeatList.setLayout(null);
 		
+		//create panelSeatPick
 		JPanel panelSeatPick = new JPanel();
 		panelSeatPick.setBackground(celadonBlue);
 		panelSeatPick.setBounds(63, 18, 685, 57);
 		panelSeatList.add(panelSeatPick);
 		panelSeatPick.setLayout(null);
 		
+		//create txtSeatPick
 		JTextArea txtSeatPick = new JTextArea();
 		txtSeatPick.setFont(new Font("Arial Black", Font.BOLD, 11));
 		txtSeatPick.setBounds(10, 10, 665, 37);
 		panelSeatPick.add(txtSeatPick);
 		
+		//create panelScreen
 		JPanel panelScreen = new JPanel();
 		panelScreen.setBounds(30, 101, 739, 16);
 		panelScreen.setBackground(honeydew);
 		panelSeatList.add(panelScreen);
 		panelScreen.setLayout(null);
 		
+		//create lblScreen
 		JLabel lblScreen = new JLabel("S C R E E N");
 		lblScreen.setFont(new Font("Arial", Font.BOLD, 10));
 		lblScreen.setHorizontalAlignment(SwingConstants.CENTER);
 		lblScreen.setBounds(10, 0, 719, 13);
 		panelScreen.add(lblScreen);
 		
+		//create btnConfirm
 		JButton btnConfirm = new JButton("COFIRM");
 		btnConfirm.addActionListener(new ActionListener() {
 			@SuppressWarnings("static-access")
@@ -209,14 +223,12 @@ public class Frame3 extends JFrame {
 		        	
 		            for(int c = 0; c < seat[i].length; c++){
 		            	
-		            	if(seat[i][c] != null) {
+		            	if(seat[i][c] != null && !seat[i][c].isEmpty()){
 		            		
-		            		txt += seat[i][c] + ", ";
-		            		
+		            		txt = txt + seat[i][c] + ", ";
 		            	}
-
 		            }
-		            
+		            //txt = txt + "\n";
 		        }
 		        
 		        if(totalCustomer > 0) {
@@ -240,6 +252,7 @@ public class Frame3 extends JFrame {
 		btnConfirm.setBounds(738, 493, 85, 47);
 		panelSeatList.add(btnConfirm);
 		
+		//create btnBack
 		JButton btnBack = new JButton("BACK");
 		btnBack.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -254,7 +267,7 @@ public class Frame3 extends JFrame {
 		btnBack.setBounds(10, 493, 85, 47);
 		panelSeatList.add(btnBack);
 		
-		
+		//create lblA1
 		JLabel lblA1 = new JLabel("");
 		lblA1.setIcon(new ImageIcon(singleBlack));
 		lblA1.setBounds(42, 164, 64, 64);
@@ -291,6 +304,7 @@ public class Frame3 extends JFrame {
 		chckbxA1.setBounds(63, 234, 21, 21);
 		panelSeatList.add(chckbxA1);
 		
+		//create lblA2
 		JLabel lblA2 = new JLabel("");
 		lblA2.setIcon(new ImageIcon(singleBlack));
 		lblA2.setBounds(116, 164, 64, 64);
@@ -322,6 +336,7 @@ public class Frame3 extends JFrame {
 		chckbxA2.setBounds(137, 234, 21, 21);
 		panelSeatList.add(chckbxA2);
 		
+		//create lblA3
 		JLabel lblA3 = new JLabel("");
 		lblA3.setIcon(new ImageIcon(singleBlack));
 		lblA3.setBounds(280, 164, 64, 64);
@@ -353,11 +368,13 @@ public class Frame3 extends JFrame {
 		chckbxA3.setBounds(302, 234, 21, 21);
 		panelSeatList.add(chckbxA3);
 		
+		//create lblA4
 		JLabel lblA4 = new JLabel("");
 		lblA4.setIcon(new ImageIcon(singleBlack));
 		lblA4.setBounds(354, 164, 64, 64);
 		panelSeatList.add(lblA4);
 		
+		//checkbox for seat A4
 		JCheckBox chckbxA4 = new JCheckBox("");
 		chckbxA4.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -383,11 +400,13 @@ public class Frame3 extends JFrame {
 		chckbxA4.setBounds(376, 234, 21, 21);
 		panelSeatList.add(chckbxA4);
 		
+		//create lblA5
 		JLabel lblA5 = new JLabel("");
 		lblA5.setIcon(new ImageIcon(singleBlack));
 		lblA5.setBounds(428, 164, 64, 64);
 		panelSeatList.add(lblA5);
 		
+		//checkbox for seat A5
 		JCheckBox chckbxA5 = new JCheckBox("");
 		chckbxA5.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -413,11 +432,13 @@ public class Frame3 extends JFrame {
 		chckbxA5.setBounds(451, 234, 21, 21);
 		panelSeatList.add(chckbxA5);
 		
+		//create lblA6
 		JLabel lblA6 = new JLabel("");
 		lblA6.setIcon(new ImageIcon(singleBlack));
 		lblA6.setBounds(580, 164, 64, 64);
 		panelSeatList.add(lblA6);
 		
+		//checkbox for seat A6
 		JCheckBox chckbxA6 = new JCheckBox("");
 		chckbxA6.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -444,11 +465,13 @@ public class Frame3 extends JFrame {
 		chckbxA6.setBounds(603, 234, 21, 21);
 		panelSeatList.add(chckbxA6);
 		
+		//create lblA7
 		JLabel lblA7 = new JLabel("");
 		lblA7.setIcon(new ImageIcon(singleBlack));
 		lblA7.setBounds(654, 164, 64, 64);
 		panelSeatList.add(lblA7);
 		
+		//checkbox for seat A7
 		JCheckBox chckbxA7 = new JCheckBox("");
 		chckbxA7.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -474,11 +497,13 @@ public class Frame3 extends JFrame {
 		chckbxA7.setBounds(675, 234, 21, 21);
 		panelSeatList.add(chckbxA7);
 		
+		//create lblB1
 		JLabel lblB1 = new JLabel("");
 		lblB1.setIcon(new ImageIcon(singleBlack));
 		lblB1.setBounds(42, 261, 64, 64);
 		panelSeatList.add(lblB1);
 		
+		//checkbox for seat B1
 		JCheckBox chckbxB1 = new JCheckBox("");
 		chckbxB1.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -504,11 +529,13 @@ public class Frame3 extends JFrame {
 		chckbxB1.setBounds(63, 331, 21, 21);
 		panelSeatList.add(chckbxB1);
 		
+		//create lblB2
 		JLabel lblB2 = new JLabel("");
 		lblB2.setIcon(new ImageIcon(singleBlack));
 		lblB2.setBounds(116, 261, 64, 64);
 		panelSeatList.add(lblB2);
 		
+		//checkbox for seat B2
 		JCheckBox chckbxB2 = new JCheckBox("");
 		chckbxB2.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -534,11 +561,13 @@ public class Frame3 extends JFrame {
 		chckbxB2.setBounds(137, 331, 21, 21);
 		panelSeatList.add(chckbxB2);
 		
+		//create lblB3
 		JLabel lblB3 = new JLabel("");
 		lblB3.setIcon(new ImageIcon(singleBlack));
 		lblB3.setBounds(280, 261, 64, 64);
 		panelSeatList.add(lblB3);
 		
+		//checkbox for seat B3
 		JCheckBox chckbxB3 = new JCheckBox("");
 		chckbxB3.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -564,11 +593,13 @@ public class Frame3 extends JFrame {
 		chckbxB3.setBounds(302, 331, 21, 21);
 		panelSeatList.add(chckbxB3);
 		
+		//create lblB4
 		JLabel lblB4 = new JLabel("");
 		lblB4.setIcon(new ImageIcon(singleBlack));
 		lblB4.setBounds(354, 261, 64, 64);
 		panelSeatList.add(lblB4);
 		
+		//checkbox for seat B4
 		JCheckBox chckbxB4 = new JCheckBox("");
 		chckbxB4.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -594,11 +625,13 @@ public class Frame3 extends JFrame {
 		chckbxB4.setBounds(376, 331, 21, 21);
 		panelSeatList.add(chckbxB4);
 		
+		//create lblB5
 		JLabel lblB5 = new JLabel("");
 		lblB5.setIcon(new ImageIcon(singleBlack));
 		lblB5.setBounds(428, 261, 64, 64);
 		panelSeatList.add(lblB5);
 		
+		//checkbox for seat B5
 		JCheckBox chckbxB5 = new JCheckBox("");
 		chckbxB5.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -624,11 +657,13 @@ public class Frame3 extends JFrame {
 		chckbxB5.setBounds(451, 331, 21, 21);
 		panelSeatList.add(chckbxB5);
 		
+		//create lblB6
 		JLabel lblB6 = new JLabel("");
 		lblB6.setIcon(new ImageIcon(singleBlack));
 		lblB6.setBounds(580, 261, 64, 64);
 		panelSeatList.add(lblB6);
 		
+		//checkbox for seat B6
 		JCheckBox chckbxB6 = new JCheckBox("");
 		chckbxB6.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -654,11 +689,13 @@ public class Frame3 extends JFrame {
 		chckbxB6.setBounds(603, 331, 21, 21);
 		panelSeatList.add(chckbxB6);
 		
+		//create lblB7
 		JLabel lblB7 = new JLabel("");
 		lblB7.setIcon(new ImageIcon(singleBlack));
 		lblB7.setBounds(654, 261, 64, 64);
 		panelSeatList.add(lblB7);
 		
+		//checkbox for seat B7
 		JCheckBox chckbxB7 = new JCheckBox("");
 		chckbxB7.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -684,11 +721,13 @@ public class Frame3 extends JFrame {
 		chckbxB7.setBounds(675, 331, 21, 21);
 		panelSeatList.add(chckbxB7);
 		
+		//create lblC1
 		JLabel lblC1 = new JLabel("");
 		lblC1.setIcon(new ImageIcon(singleBlack));
 		lblC1.setBounds(42, 358, 64, 64);
 		panelSeatList.add(lblC1);
 		
+		//checkbox for seat C1
 		JCheckBox chckbxC1 = new JCheckBox("");
 		chckbxC1.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -715,11 +754,13 @@ public class Frame3 extends JFrame {
 		chckbxC1.setBounds(63, 428, 21, 21);
 		panelSeatList.add(chckbxC1);
 		
+		//create lblC2
 		JLabel lblC2 = new JLabel("");
 		lblC2.setIcon(new ImageIcon(singleBlack));
 		lblC2.setBounds(116, 358, 64, 64);
 		panelSeatList.add(lblC2);
 		
+		//checkbox for seat C2
 		JCheckBox chckbxC2 = new JCheckBox("");
 		chckbxC2.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -745,11 +786,13 @@ public class Frame3 extends JFrame {
 		chckbxC2.setBounds(137, 428, 21, 21);
 		panelSeatList.add(chckbxC2);
 		
+		//create lblC3
 		JLabel lblC3 = new JLabel("");
 		lblC3.setIcon(new ImageIcon(singleBlack));
 		lblC3.setBounds(280, 358, 64, 64);
 		panelSeatList.add(lblC3);
 		
+		//checkbox for seat C3
 		JCheckBox chckbxC3 = new JCheckBox("");
 		chckbxC3.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -776,11 +819,13 @@ public class Frame3 extends JFrame {
 		chckbxC3.setBounds(302, 428, 21, 21);
 		panelSeatList.add(chckbxC3);
 		
+		//create lblC4
 		JLabel lblC4 = new JLabel("");
 		lblC4.setIcon(new ImageIcon(singleBlack));
 		lblC4.setBounds(354, 358, 64, 64);
 		panelSeatList.add(lblC4);
 		
+		//checkbox for seat C4
 		JCheckBox chckbxC4 = new JCheckBox("");
 		chckbxC4.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -806,11 +851,13 @@ public class Frame3 extends JFrame {
 		chckbxC4.setBounds(376, 428, 21, 21);
 		panelSeatList.add(chckbxC4);
 		
+		//create lblC5
 		JLabel lblC5 = new JLabel("");
 		lblC5.setIcon(new ImageIcon(singleBlack));
 		lblC5.setBounds(428, 358, 64, 64);
 		panelSeatList.add(lblC5);
 		
+		//checkbox for seat C5
 		JCheckBox chckbxC5 = new JCheckBox("");
 		chckbxC5.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -836,11 +883,13 @@ public class Frame3 extends JFrame {
 		chckbxC5.setBounds(451, 428, 21, 21);
 		panelSeatList.add(chckbxC5);
 		
+		//create lblC6
 		JLabel lblC6 = new JLabel("");
 		lblC6.setIcon(new ImageIcon(singleBlack));
 		lblC6.setBounds(580, 358, 64, 64);
 		panelSeatList.add(lblC6);
 		
+		//checkbox for seat C6
 		JCheckBox chckbxC6 = new JCheckBox("");
 		chckbxC6.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -866,11 +915,13 @@ public class Frame3 extends JFrame {
 		chckbxC6.setBounds(605, 428, 21, 21);
 		panelSeatList.add(chckbxC6);
 		
+		//create lblC7
 		JLabel lblC7 = new JLabel("");
 		lblC7.setIcon(new ImageIcon(singleBlack));
 		lblC7.setBounds(654, 358, 64, 64);
 		panelSeatList.add(lblC7);
 		
+		//checkbox for seat C7
 		JCheckBox chckbxC7 = new JCheckBox("");
 		chckbxC7.addItemListener(new ItemListener() {
 			public void itemStateChanged(ItemEvent e) {
@@ -896,6 +947,7 @@ public class Frame3 extends JFrame {
 		chckbxC7.setBounds(675, 428, 21, 21);
 		panelSeatList.add(chckbxC7);
 		
+		//create panelMovieClub
 		panelMovieClub = new JPanel();
 		panelMovieClub.setLayout(null);
 		panelMovieClub.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "MOVIE CLUB", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
@@ -904,6 +956,7 @@ public class Frame3 extends JFrame {
 		panelMovieClub.setVisible(false);
 		panelInfo.add(panelMovieClub);
 		
+		//create rdbtnYes
 		JRadioButton rdbtnYes = new JRadioButton("YES");
 		rdbtnYes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -922,6 +975,7 @@ public class Frame3 extends JFrame {
 		rdbtnYes.setBounds(91, 62, 54, 21);
 		panelMovieClub.add(rdbtnYes);
 		
+		//create rdbtnNo
 		rdbtnNo = new JRadioButton("NO");
 		rdbtnNo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -938,6 +992,7 @@ public class Frame3 extends JFrame {
 		rdbtnNo.setBounds(166, 62, 54, 21);
 		panelMovieClub.add(rdbtnNo);
 		
+		//create lblMovieClub
 		JLabel lblMovieClub = new JLabel("MOVIE CLUB (15% OFF)");
 		lblMovieClub.setHorizontalAlignment(SwingConstants.CENTER);
 		lblMovieClub.setForeground(honeydew);
@@ -945,6 +1000,7 @@ public class Frame3 extends JFrame {
 		lblMovieClub.setBounds(10, 16, 290, 40);
 		panelMovieClub.add(lblMovieClub);
 		
+		//vreate panelCustomers
 		panelCustomers = new JPanel();
 		panelCustomers.setLayout(null);		
 		panelCustomers.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "CUSTOMERS", TitledBorder.CENTER, TitledBorder.TOP, null, new Color(241, 250, 238)));
@@ -953,50 +1009,59 @@ public class Frame3 extends JFrame {
 		panelCustomers.setVisible(false);
 		panelInfo.add(panelCustomers);
 		
+		//create lblKids
 		JLabel lblKids = new JLabel("KIDS (RM 9)");
 		lblKids.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblKids.setForeground(honeydew);
 		lblKids.setBounds(10, 20, 147, 33);
 		panelCustomers.add(lblKids);
 		
+		//create spinner for kids
 		SpinnerModel plusKids = new SpinnerNumberModel(0, 0, 100, 1);
 		JSpinner spinnerKids = new JSpinner(plusKids);
 		spinnerKids.setBounds(247, 20, 39, 30);
 		panelCustomers.add(spinnerKids);
 		
+		//create lblStudent
 		JLabel lblStudent = new JLabel("STUDENT (RM 12)");
 		lblStudent.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblStudent.setForeground(honeydew);
 		lblStudent.setBounds(10, 55, 147, 33);
 		panelCustomers.add(lblStudent);
 		
+		//create spinner for student
 		SpinnerModel plusStudent = new SpinnerNumberModel(0, 0, 100, 1);
 		JSpinner spinnerStudent = new JSpinner(plusStudent);
 		spinnerStudent.setBounds(247, 55, 39, 30);
 		panelCustomers.add(spinnerStudent);
 		
+		//create lblAdult 
 		JLabel lblAdult = new JLabel("ADULT (RM 18)");
 		lblAdult.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblAdult.setForeground(honeydew);
 		lblAdult.setBounds(10, 88, 147, 33);
 		panelCustomers.add(lblAdult);
 		
+		//create spinner for adult
 		SpinnerModel plusAdult = new SpinnerNumberModel(0, 0, 100, 1);
 		JSpinner spinnerAdult = new JSpinner(plusAdult);
 		spinnerAdult.setBounds(247, 90, 39, 30);
 		panelCustomers.add(spinnerAdult);
 		
+		//create lblEldery 
 		JLabel lblEldery = new JLabel("ELDERY (RM 10)");
 		lblEldery.setFont(new Font("Arial Black", Font.BOLD, 12));
 		lblEldery.setForeground(honeydew);
 		lblEldery.setBounds(10, 121, 147, 33);
 		panelCustomers.add(lblEldery);
 		
+		//create spinner for eldery
 		SpinnerModel plusEldery = new SpinnerNumberModel(0, 0, 100, 1);
 		JSpinner spinnerEldery = new JSpinner(plusEldery);
 		spinnerEldery.setBounds(247, 125, 39, 30);
 		panelCustomers.add(spinnerEldery);
 		
+		//create panelTotalCustomer
 		JPanel panelTotalCustomer = new JPanel();
 		panelTotalCustomer.setLayout(null);
 		panelTotalCustomer.setBorder(new TitledBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 255), new Color(160, 160, 160)), "TOTAL CUSTOMER", TitledBorder.RIGHT, TitledBorder.TOP, null, new Color(241, 250, 238)));
@@ -1004,6 +1069,7 @@ public class Frame3 extends JFrame {
 		panelTotalCustomer.setBounds(10, 164, 290, 61);
 		panelCustomers.add(panelTotalCustomer);
 		
+		//create b5nApply
 		JButton btnApply = new JButton("APPLY");
 		btnApply.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -1052,6 +1118,7 @@ public class Frame3 extends JFrame {
 		btnApply.setBounds(10, 20, 79, 31);
 		panelTotalCustomer.add(btnApply);
 		
+		//create lblTotalCustomer
 		lblTotalCustomer = new JLabel("");
 		lblTotalCustomer.setForeground(prussianBlue);
 		lblTotalCustomer.setFont(new Font("Arial Black", Font.BOLD, 13));
@@ -1066,19 +1133,21 @@ public class Frame3 extends JFrame {
 	
 
 
-
+	//method for getCurrentDate
 	public String getCurrentDate(int Months, int Days) {
 	    return LocalDate.of(2022, Months, Days)
 	    		.format(DateTimeFormatter
 	    		.ofPattern("d MMM uuuu (EEEE)"));
 	}
 	
+	//method for getCurrentTime
 	public String getCurrentTime(int Hours, int Minutes) {
 	    return LocalTime.of(Hours, Minutes)
 	    		.format(DateTimeFormatter
 	    		.ofPattern("HH:mm"));
 	}
 	
+	//method for reseting the spinner
 	public void spinnerReset(int inputCustomer, JSpinner spinnerKids, JSpinner spinnerStudent, JSpinner spinnerAdult, JSpinner spinnerEldery) {
 		
 		inputCustomer = 0;
@@ -1093,17 +1162,14 @@ public class Frame3 extends JFrame {
         String seatPick = "";
         
         for(int i = 0; i < seat.length; i++){
-        	
             for(int c = 0; c < seat[i].length; c++){
             	
-            	if(seat[i][c] != null) {
+            	if(seat[i][c] != null && !seat[i][c].isEmpty()){
             		
-            		seatPick += seat[i][c] + " ";
-            		
+            		seatPick = seatPick + seat[i][c] + ", ";
             	}
-
             }
-            
+            //txt = txt + "\n";
         }
         
         return seatPick;
