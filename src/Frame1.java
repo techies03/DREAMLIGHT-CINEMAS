@@ -556,5 +556,13 @@ public class Frame1 extends JFrame {
 	    		.ofPattern("HH:mm:ss"));
 	}
 	
+	//main method
+	public static void main(String [] args){
+		
+		Frame1 f1 = new Frame1(String);
+		f1.show();
+		
+	}
+	
 }
 
