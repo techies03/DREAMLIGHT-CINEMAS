@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-
 ### NOTES
 - First off, this code is a bit scuffed because I coded it entirely on my own from June 15 to June 20.
 - Secondly, I didn't change the filename for each frame because I'm too lazy XD
-- If I can re-code this project then [this](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/master/README.md#what-can-you-do-to-improve-this-program) is what I would've done.
+- If I can re-code this project then [this](### WHAT CAN YOU DO TO IMPROVE THIS PROGRAM) is what I would've done.
 - There's ton of skills that I've learned in this project
     - utilizing J
 - if you're looking to change the username and pass, it should be right [here](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/550ab8120f4fbaf6dd5948b9fa54c48749ffdfe6/src/Frame.java#L104)
