@@ -22,10 +22,15 @@ https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-
 
 ### NOTES
 - First off, this code is a bit scuffed because I coded it entirely on my own from June 15 to June 20.
-- Secondly, I didn't change the filename for each frame because I'm too lazy XD
-- There's ton of skills that I've learned in this project
-    - utilizing J
+- Secondly, I didn't change the filename for each frame because I'm too lazy XD.
+- There's ton of skills that I've learned and used throughout this project:
+    - utilizing java.time.*
+    - used a lot of ``.setVisible()`` to make the program look beginner friendly.
+    - used bunch of ``actionPerformed``.
+    - used [2D Arrays](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/fd5aeed1b2f4568222242042cf85e18ad5fbc9f2/src/Frame3.java#L66).
+    - save JPanel to a pdf ([button print](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/445f40239d36610c900c928eca812fdbc81f8c04/src/Frame5.java#L238) and [the method](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/445f40239d36610c900c928eca812fdbc81f8c04/src/Frame5.java#L255))  for receipt purpose.
 - if you're looking to change the username and pass, it should be right [here](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/550ab8120f4fbaf6dd5948b9fa54c48749ffdfe6/src/Frame.java#L104)
-- If I can re-code this program then [this](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Improve-Code-Quality) is what I would've done.
+- labeling the whole variable in [frame3](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/master/src/Frame3.java) is the definition of a pain in the ass. Although i could've code it better but I didn't have much time :skull:).
+- if I can re-code this program then [this](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Improve-Code-Quality) is what I would've done.
 ----------------------------------
 
