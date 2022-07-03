@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="33%" src="https://media.discordapp.net/attachments/900368184924852248/989082725724094535/unknown.png"> 
+    <img width="45%" src="https://media.discordapp.net/attachments/900368184924852248/989082725724094535/unknown.png"> 
 </p>
 
 <p align="center">
@@ -15,23 +15,19 @@
    <a href="https://discordapp.com/users/553463605769535490"><img alt="Discord" src="https://img.shields.io/discord/900368184924852245?color=%235865F2&label=support&logo=discord&logoColor=white&style=for-the-badge"></a>
 </p>
 
-
+----------------------------------
+DREAMLIGHT CINEMAS
+=============================
 
 https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-b39e-d05772d0295c.mp4
 
+## NOTES
 
-<p align="center" width="100%">
-    DREAMLIGHT CINEMAS
-</p>
+- if you're looking to change the username and pass, it should be right [here](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/550ab8120f4fbaf6dd5948b9fa54c48749ffdfe6/src/Frame.java#L104)
 
-
-
-DREAMLIGHT CINEMAS
-=============================
 ----------------------------------
+
 ## References
 
 - 
-
-## Color Reference
 
