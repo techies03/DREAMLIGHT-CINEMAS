@@ -1,20 +1,12 @@
 import javax.swing.*;
-
-
 import javax.swing.Timer;
-
 import java.awt.*;
-import java.lang.*;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.time.format.FormatStyle;
-import java.time.temporal.TemporalAdjusters;
 import java.util.*;
-import java.lang.*;
-import java.time.*;
 
 import javax.swing.border.EmptyBorder;
 
@@ -23,10 +15,6 @@ import java.awt.event.ActionEvent;
 
 import javax.swing.border.TitledBorder;
 import javax.swing.border.EtchedBorder;
-import java.awt.event.MouseWheelListener;
-import java.awt.event.MouseWheelEvent;
-import java.awt.event.ItemListener;
-import java.awt.event.ItemEvent;
 
 
 //create class for Frame1
@@ -377,8 +365,8 @@ public class Frame1 extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 									
 				movie = "Eyes On Me: The Movie";
-				Frame2 f3 = new Frame2(name, movie, Months, Days, Hours, Minutes);
-				f3.show();
+				Frame2 f2 = new Frame2(name, movie, Months, Days, Hours, Minutes);
+				f2.show();
 				dispose();
 			}
 		});
@@ -429,8 +417,8 @@ public class Frame1 extends JFrame {
 				
 				movie = "Minions: The Rise of Gru";
 				
-				Frame2 f3 = new Frame2(name, movie, Months, Days, Hours, Minutes);
-				f3.show();
+				Frame2 f2 = new Frame2(name, movie, Months, Days, Hours, Minutes);
+				f2.show();
 				dispose();
 			}
 		});

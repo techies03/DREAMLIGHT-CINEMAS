@@ -1,4 +1,3 @@
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.EventQueue;
 
@@ -7,19 +6,11 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JTextPane;
 import javax.swing.JLabel;
-import javax.swing.JTextArea;
-import javax.swing.DropMode;
-import javax.swing.JSeparator;
-import javax.swing.JScrollBar;
-import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
-import javax.swing.ScrollPaneConstants;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
 public class Welcome extends JFrame {
 
@@ -49,6 +40,7 @@ public class Welcome extends JFrame {
 		});
 	}
 
+	
 	//create class for Welcome
 	public Welcome() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -112,10 +104,6 @@ public class Welcome extends JFrame {
 		btnJump.setFont(new Font("Arial Black", Font.BOLD, 15));
 		btnJump.setBounds(217, 438, 183, 46);
 		panel.add(btnJump);
-		
-		
-		
-		
 		
 	}
 }
