@@ -1,6 +1,6 @@
 <p align="center" width="100%">
     <a href="https://www.youtube.com/watch?v=iik25wqIuFo">
-    <img width="35%" src="https://media.discordapp.net/attachments/900368184924852248/989082725724094535/unknown.png">
+    <img width="40%" src="https://user-images.githubusercontent.com/90133205/177029000-50b2cffa-efae-44bb-bab2-bd86291b1ea9.png">
 </p>
 
 <p align="center">
