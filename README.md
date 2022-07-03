@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-
 - Secondly, I didn't change the filename for each frame because I'm too lazy XD.
 - There's ton of skills that I've learned and used throughout this project:
     - utilizing java.time.*
-    - used a lot of ``.setVisible()`` to make the program look beginner friendly.
+    - used a lot of ``.setVisible()`` to make the program looks beginner friendly.
     - used bunch of ``actionPerformed``.
     - used [2D Arrays](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/fd5aeed1b2f4568222242042cf85e18ad5fbc9f2/src/Frame3.java#L66).
     - save JPanel to a pdf ([button print](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/445f40239d36610c900c928eca812fdbc81f8c04/src/Frame5.java#L238) and [the method](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/445f40239d36610c900c928eca812fdbc81f8c04/src/Frame5.java#L255))  for receipt purpose.
