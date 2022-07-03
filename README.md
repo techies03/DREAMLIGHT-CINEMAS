@@ -4,9 +4,8 @@
 </p>
 
 <p align="center">
- <a href="https://github.com/techies03/DREAMLIGHT-CINEMAS/releases"><img alt="GitHub release (latest by date)"  src="https://img.shields.io/github/v/release/techies03/DREAMLIGHT-CINEMAS?logo=github&style=for-the-badge">
-</a>
-   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/techies03/DREAMLIGHT-CINEMAS?logo=github&style=for-the-badge"></a>
+ <a href="https://www.youtube.com/watch?v=iik25wqIuFo"><img alt="GitHub repo size"  src="https://img.shields.io/github/repo-size/techies03/DREAMLIGHT-CINEMAS?logo=github&style=for-the-badge"></a>
+   <a href="https://github.com/techies03/DREAMLIGHT-CINEMAS/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/techies03/DREAMLIGHT-CINEMAS?logo=github&style=for-the-badge"></a>
    <a href="https://www.youtube.com/watch?v=iik25wqIuFo"><img alt="Scrutinizer code quality (GitHub/Bitbucket)" src="https://img.shields.io/scrutinizer/quality/g/techies03/DREAMLIGHT-CINEMAS?logo=Scrutinizer%20CI&style=for-the-badge"><a/>
    <a href="https://www.codefactor.io/repository/github/techies03/dreamlight-cinemas"><img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/techies03/DREAMLIGHT-CINEMAS?logo=codefactor&style=for-the-badge">
 </p>
