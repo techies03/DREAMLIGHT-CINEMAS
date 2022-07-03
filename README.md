@@ -31,6 +31,6 @@ https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-
 - if you're looking to change the **username** and **password**, it should be right [here](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/550ab8120f4fbaf6dd5948b9fa54c48749ffdfe6/src/Frame.java#L104)
 - labeling the whole variable in [frame3](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/master/src/Frame3.java) is the definition of a pain in the ass. (although i could've code it better but I didn't have much time :skull:).
 - if I can re-code the project then [this](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Improve-Code-Quality) is what I would've done.
-- feel free to fork this project and if you have Netbeans IDE or Eclipse Java then you can go to the [installation](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Installation).
+- feel free to fork this project and if you have Netbeans IDE or Eclipse Java then you can import the project. Here's how to [import](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Installation).
 ----------------------------------
 
