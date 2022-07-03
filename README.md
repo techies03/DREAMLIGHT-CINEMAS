@@ -12,13 +12,7 @@
    <a href="https://discordapp.com/users/553463605769535490"><img alt="Discord" src="https://img.shields.io/discord/900368184924852245?color=%235865F2&label=support&logo=discord&logoColor=white&style=for-the-badge"></a>
 </p>
 
-
-
-
-
-
-https://user-images.githubusercontent.com/90133205/177025497-aef97a2d-fb32-40af-ac7c-148712b76b80.mp4
-
+https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-b39e-d05772d0295c.mp4
 
 
 
