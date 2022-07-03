@@ -65,15 +65,15 @@ public class Frame3 extends JFrame {
 	
 	//declaration for 2d array
 							//collumn
-	String[][] seat = 	{	{"", "", "", "", "", "", ""}, //row
-							{"", "", "", "", "", "", ""},
-							{"", "", "", "", "", "", ""},
-						};
+	String[][] seat = {	{"", "", "", "", "", "", ""}, //row
+				{"", "", "", "", "", "", ""},
+				{"", "", "", "", "", "", ""},
+			  };
 	
 	int[][] seatValue = {	{0, 0, 0, 0, 0, 0, 0,},
-							{0, 0, 0, 0, 0, 0, 0,},
-							{0, 0, 0, 0, 0, 0, 0,},
-						};
+				{0, 0, 0, 0, 0, 0, 0,},
+				{0, 0, 0, 0, 0, 0, 0,},
+			    };
 
 
 	public Frame3(String name, String movie, int Months, int Days, int Hours, int Minutes, String showTime) {
