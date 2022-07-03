@@ -16,7 +16,6 @@ public class Frame extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtUsername;
 	private JPasswordField txtPassword;
-	public String NONO = "noon";
 
 	public static void main(String[] args) {
 		

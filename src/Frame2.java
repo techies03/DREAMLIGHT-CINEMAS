@@ -52,7 +52,7 @@ public class Frame2 extends JFrame {
 
 
 	public Frame2(String name, String movie, int Months, int Days, int Hours, int Minutes) {
-		
+				
 		int currentDay = LocalDateTime.now().getDayOfMonth();
 		LocalDateTime bookingDateTime = LocalDateTime.of(2022, Months, Days, Hours, Minutes);
 		LocalDateTime timeMax = LocalDateTime.of(2022, Months, Days, 23, 00);
