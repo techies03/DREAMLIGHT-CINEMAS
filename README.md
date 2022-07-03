@@ -31,6 +31,6 @@ https://user-images.githubusercontent.com/90133205/177025926-f7d7d911-577f-479d-
 - labeling the whole variable in [frame3](https://github.com/techies03/DREAMLIGHT-CINEMAS/blob/master/src/Frame3.java) is the definition of a pain in the ass. (although i could've code it better but I didn't have much time :skull:).
 - if I can re-code the project then **[this](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Improve-Code-Quality)** is what I would've done.
 - feel free to fork this project and if you have Netbeans IDE or Eclipse Java then you can import the project. Here's how to **[import](https://github.com/techies03/DREAMLIGHT-CINEMAS/wiki/Import)**.
-- P.S. there's a problem with the showtimes where if the date is 28 June, you will not be able to see the showtimes for 1 July and idk why :rofl:
+- P.S. there's a problem with the showtimes where if the date is 25 > current month, you will not be able to see the showtimes for the next month and idk why :rofl:
 ----------------------------------
 
